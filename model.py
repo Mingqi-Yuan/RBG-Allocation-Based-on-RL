@@ -2,6 +2,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 import datetime
+import os
 
 from simulator import AIRVIEW
 from simulator import load_av_ue_info
@@ -102,6 +103,8 @@ class Replayer:
         indices = np.random.choice(self.count, size=size)
         return (np.stack(self.memory.loc[indices, field]) for field in
                 self.memory.columns)
+    def clear(self):
+        self.__init__(capacity=self.capacity)
 
 class DDPGAgent:
     def __init__(self,
@@ -112,7 +115,8 @@ class DDPGAgent:
                  batch_size = 32,
                  lr=0.001,
                  replayer_capacity=100000,
-                 log_dir=''):
+                 save_dir='./snapshots/',
+                 log_dir='./log'):
         self.user_num = user_num
         self.feature_num = feature_num
         self.rgb_num = rgb_num
@@ -121,7 +125,8 @@ class DDPGAgent:
         self.lr = lr
         self.batch_size = batch_size
         self.replayer = Replayer(replayer_capacity)
-        self.log_dir = log_dir
+        self.save_dir = save_dir
+        self.log_dir = os.path.join(log_dir)
 
         self.actor = Actor(
             self.user_num,
@@ -185,7 +190,6 @@ class DDPGAgent:
         next_qs = self.critic_target_net.predict(next_observation_actions[..., tf.newaxis])[:, 0]
         targets = reward_ + self.gamma * next_qs * (1. - done_)
 
-
         self.critic_eval_net.fit(observation_actions[..., tf.newaxis], targets)
 
         self.update_target_net(self.actor_target_net,
@@ -193,12 +197,18 @@ class DDPGAgent:
         self.update_target_net(self.critic_target_net,
                                self.critic_eval_net, self.lr)
 
+    def save(self, epoch):
+        self.actor_eval_net.save(self.save_dir + 'actor_eval_net_epoch' + str(epoch) + '.h5')
+        self.critic_eval_net.save(self.save_dir + 'critic_eval_net_epoch' + str(epoch) + '.h5')
+        self.actor_target_net.save(self.save_dir + 'actor_target_net_epoch' + str(epoch) + '.h5')
+        self.critic_target_net.save(self.save_dir + 'critic_target_net_epoch' + str(epoch) + '.h5')
+
 if __name__== '__main__':
-    BATCH_SIZE = 1000
+    BATCH_SIZE = 100
     EPOCH = 1500
     MEMORY_CAPACITY = 1000000
     RGB_NUM = 17
-    USER_NUM = 5
+    USER_NUM = None
     FEATURE_NUM = 21
 
     env = AIRVIEW()
@@ -213,6 +223,7 @@ if __name__== '__main__':
 
     for i in range(EPOCH):
         print('Epoch: {}'.format(i))
+        USER_NUM = np.random.randint(1, 17, 1)[0]
         av_begin_ue_idx = i % (len(av_ues_info) - USER_NUM)
         av_ues_idx = list(range(av_begin_ue_idx, av_begin_ue_idx + USER_NUM))
 
@@ -221,41 +232,56 @@ if __name__== '__main__':
         while True:
             state_, reward, done, info = env.step(None)
             if done:
-                result = env.get_result()
-                print('%s epoch=%d, ue_idx=%d~%d, %s ues_rate:[avg=%.0f,worst=%.0f]'
-                      % (datetime.datetime.now(), i, env.av_ues_idx[0], env.av_ues_idx[-1],
-                         'PF',
-                         result['avg_ue_rate'], result['worst_ue_rate']))
-
+                pf_result = env.get_result()
                 performance['PF'] = performance.get('PF', [])
-                performance['PF'].append((result['avg_ue_rate'], result['worst_ue_rate']))
+                performance['PF'].append((pf_result['avg_ue_rate'], pf_result['worst_ue_rate']))
                 break
 
         # allocation based on RL
         observation = env.reset(av_ues_info, av_ues_idx)
-        episode_reward = 0
         while True:
-            if env.bs.newtx_rbg_ue == [None for _ in range(RGB_NUM)]:
-                observation_next, reward, done, info = env.step(None)
-                observation_next = tf.convert_to_tensor(observation_next, dtype=tf.float32)
-                observation_next = tf.expand_dims(observation_next, 0)
-            else:
-                action = agent.decide(observation)
-                print(action['action'])
-                next_observation, reward, done, _ = env.step(action['action'])
-                episode_reward += reward
-                agent.learn(observation, action['softmax_score'], reward, next_observation, done)
-                if done:
-                    result = env.get_result()
-                    print('%s epoch=%d, ue_idx=%d~%d, %s ues_rate:[avg=%.0f,worst=%.0f]'
-                          % (datetime.datetime.now(), i, env.av_ues_idx[0], env.av_ues_idx[-1],
-                             'RL',
-                             result['avg_ue_rate'], result['worst_ue_rate']))
-                    performance['RL'] = performance.get('RL', [])
-                    performance['RL'].append((result['avg_ue_rate'], result['worst_ue_rate']))
-                    break
-                observation = next_observation
+            # if env.bs.newtx_rbg_ue == [None for _ in range(RGB_NUM)]:
+            #     observation_next, reward, done, info = env.step(None)
+            #     observation_next = tf.convert_to_tensor(observation_next, dtype=tf.float32)
+            #     observation_next = tf.expand_dims(observation_next, 0)
+            # else:
+            action = agent.decide(observation)
+            print('Allocation result: ',action['action'])
+            next_observation, reward, done, _ = env.step(action['action'])
+            agent.learn(observation, action['softmax_score'], reward, next_observation, done)
+            if done:
+                rl_result = env.get_result()
+                performance['RL'] = performance.get('RL', [])
+                performance['RL'].append((rl_result['avg_ue_rate'], rl_result['worst_ue_rate']))
+                break
+            observation = next_observation
 
+        # clear the replayer and save the model
+        agent.replayer.clear()
+        agent.save(epoch=i)
+
+        with open('record.txt', 'a') as file:
+            record = '{} Epoch={}, ue_idx={}~{}, {} ues_rate:[avg={},worst={}], {} ues_rate:[avg={},worst={}]'.format(
+                datetime.datetime.now(), i, env.av_ues_idx[0], env.av_ues_idx[-1],
+                'PF', pf_result['avg_ue_rate'], pf_result['worst_ue_rate'],
+                'RL', rl_result['avg_ue_rate'], rl_result['worst_ue_rate'])
+            file.write(record)
+            file.write('\n')
+            file.close()
+
+        if i % 10 == 0 and i is not 0:
+            PF_avg, PF_worst = zip(*performance['PF'])
+            RL_avg, RL_worst = zip(*performance['RL'])
+
+            better_avg = [(r-p)/ p for p, r in zip(PF_avg, RL_avg)]
+            better_avg_percent = sum(better_avg) / len(better_avg)
+            better_worst = [(r-p)/ p for p, r in zip(PF_worst, RL_worst)]
+            better_worst_percent = sum(better_worst) / len(better_worst)
+            both_better = [1 if (a > 0 and w > 0) else 0 for a, w in zip(better_avg, better_worst)]
+            both_better_percent = sum(both_better) / len(both_better)
+
+            print("better_avg_percent:{}, better_worst_percent:{}, both_better_percent:{}".format(better_avg_percent,
+                 better_worst_percent, both_better_percent))
 
 
 
