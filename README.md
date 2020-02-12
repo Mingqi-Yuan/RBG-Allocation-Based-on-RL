@@ -7,7 +7,7 @@ The related files of python code:
 	simulator.py ue recv.py
 	mcs bler-mcs1˜14frame=500,15˜29frame=100.mat
 * **Reinforcement Learning Algorithm**: model.py
-* **Performance Evaluation**: under developing
+* **Performance Evaluation**: eval.py
 
 
 
