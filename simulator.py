@@ -494,24 +494,6 @@ class AIRVIEW:
             '''ue recv'''
             for ue in self.bs.ues:
                 ue.recv()
-    
-            # with open('simulator.txt', 'a') as pf:
-            #     pf.write('tti:%d\r\n' %(self.tti))
-            #     for ue in self.bs.ues:
-            #         pf.write('ue:%d, rsrp:%.0f, buffer:[%d,%d], rate:%.0e, after_sched_avg_thp:%.1f, idle_harq_num:%d' \
-            #                  %(ue.id, ue.rsrp, ue.before_sched_buffer, ue.after_sched_buffer, \
-            #                    ue.avg_rate, ue.after_sched_avg_thp, ue.before_sched_idle_harq_num))
-            #         pf.write('\r\n      cqi:')
-            #         for cqi in ue.rb_cqi:
-            #             pf.write('%.d, ' %(cqi))
-            #         pf.write('\r\n      prior:')
-            #         for prior in ue.rbg_prior:
-            #             pf.write('%.1f, ' %(prior))
-            #         pf.write('\r\n      alloc_rbg:')
-            #         for rbg in ue.alloc_rbg:
-            #             pf.write('%d, ' %(rbg))
-            #         pf.write('\r\n      olla=%.2f, mcs=%s, tb_size=%d, eff_tb_size=%d, retx=%s\r\n' \
-            #                  %(ue.olla_offset, ue.mcs, ue.tb_size, ue.eff_tb_size, ue.retxing_flag))
 
             self.tti += 1
             self.bs.tti = self.tti

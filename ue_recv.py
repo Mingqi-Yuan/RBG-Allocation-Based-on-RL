@@ -54,7 +54,7 @@ def get_snr_bler(mcs, tbs):
     return snr_bler
 
 def get_bler(mcs, tbs, snr):
-    print('snr is', snr)
+    # print('snr is', snr)
     snr_bler = get_snr_bler(mcs, tbs)
     
     ref_snrs, ref_blers = np.float64(list(snr_bler.keys())), np.float64(list(snr_bler.values()))
