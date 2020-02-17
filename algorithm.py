@@ -1,115 +1,88 @@
+import numpy as np
+import pandas as pd
 import datetime
 import logging
 logging.disable(30)
 
-from model.DDPG import DDPGAgent
-from model.SoftAC import SoftACAgent
-
 from simulator import AIRVIEW
 from simulator import load_av_ue_info
 
-if __name__== '__main__':
-    BATCH_SIZE = 1000
-    EPOCH = 500
-    MEMORY_CAPACITY = 1000000
-    RGB_NUM = 17
-    USER_NUM = None
+from model.DDPG import DDPGAgent
+
+if __name__ == '__main__':
+    RBG_NUM = 17
     FEATURE_NUM = 21
+    TTI_SUM = 20000
+    RANDOM_SEED = 7
+    POSSION_AVG = 5 / 1000
+    EPOCH = 200
 
-    env = AIRVIEW()
+    pf_env = AIRVIEW()
+    rl_env = AIRVIEW()
+
     av_ues_info = load_av_ue_info()
-    # agent = SoftACAgent(
-    #     user_num=USER_NUM,
-    #     feature_num=FEATURE_NUM,
-    #     rgb_num=RGB_NUM,
-    #     batch_size=BATCH_SIZE,
-    #     replayer_capacity=MEMORY_CAPACITY,
-    #     resume=False,
-    #     checkpoint={
-    #         'actor_eval': 'actor_eval_net_epoch90.h5',
-    #         'actor_target': 'actor_target_net_epoch90.h5',
-    #         'critic_eval': 'critic_eval_net_epoch90.h5',
-    #         'critic_target': 'critic_target_net_epoch90.h5'
-    #     })
-    agent = DDPGAgent(
-        user_num=USER_NUM,
-        feature_num=FEATURE_NUM,
-        rgb_num=RGB_NUM,
-        batch_size=BATCH_SIZE,
-        replayer_capacity=MEMORY_CAPACITY,
-        resume=False,
-        checkpoint={
-            'actor_eval':'actor_eval_net_epoch90.h5',
-            'actor_target':'actor_target_net_epoch90.h5',
-            'critic_eval':'critic_eval_net_epoch90.h5',
-            'critic_target':'critic_target_net_epoch90.h5'
-        })
-    performance = dict()
 
-    if agent.resume == True:
-        av_begin_ue_idx = 0
-    else:
-        av_begin_ue_idx = 0
+    ddpg_agent = DDPGAgent(
+        user_num=None,
+        feature_num=21,
+        rbg_num=17,
+        replayer_capacity=20000)
 
-    for i in range(av_begin_ue_idx, EPOCH):
-        print('Epoch: {}'.format(i))
-        USER_NUM = 5
-        av_begin_ue_idx = i % (len(av_ues_info) - USER_NUM)
-        av_ues_idx = list(range(av_begin_ue_idx, av_begin_ue_idx + USER_NUM))
-        # av_ues_idx = list(range(i*5, (i+1)*5))
+    for epoch in range(EPOCH):
+        print('Epoch={}'.format(epoch))
+        INITIAL_USER_NUM = np.random.randint(2, 18, 10)[0]
+        av_ues_idx = list(range(0, INITIAL_USER_NUM))
 
-        # allocation based on PF
-        _ = env.reset(av_ues_info, av_ues_idx)
-        while True:
-            state_, reward, done, info = env.step(None)
-            if done:
-                pf_result = env.get_result()
-                performance['PF'] = performance.get('PF', [])
-                performance['PF'].append((pf_result['avg_ue_rate'], pf_result['worst_ue_rate']))
+        pf_state = pf_env.reset(av_ues_info, av_ues_idx)
+        rl_state = rl_env.reset(av_ues_info, av_ues_idx)
+
+        tti = 0
+        pf_done = False
+        rl_done = False
+
+        while (tti < TTI_SUM):
+            possion_add_user = np.random.poisson(POSSION_AVG, 1)[0]
+
+            ''' PF Allocation '''
+            if pf_done == False:
+                pf_next_state, pf_reward, pf_done, pf_info = pf_env.step(None, possion_add_user)
+
+            ''' RL Allocation '''
+            if rl_done == False:
+                if rl_env.bs.newtx_rbg_ue == [None for _ in range(RBG_NUM)]:
+                    rl_next_state, rl_reward, rl_done, rl_info = rl_env.step(None, possion_add_user)
+                else:
+                    action = ddpg_agent.decide(rl_state)
+                    rl_next_state, rl_reward, rl_done, rl_info = rl_env.step(action['action'], possion_add_user)
+                    ddpg_agent.learn(rl_state, action['softmax_score'], rl_reward, rl_next_state, done=False)
+
+                rl_state = rl_next_state
+
+            if pf_done == True or rl_done == True:
+                ddpg_agent.learn(None, None, None, None, store=False, done=True)
                 break
 
-        # allocation based on RL
-        observation = env.reset(av_ues_info, av_ues_idx)
-        while True:
-            action = agent.decide(observation)
-            print('User index={}~{}'.format(env.av_ues_idx[0], env.av_ues_idx[-1]))
-            print('Allocation result={}'.format(action['action']))
-            next_observation, reward, done, _ = env.step(action['action'])
-            agent.learn(observation, action['softmax_score'], reward, next_observation, done)
-            if done:
-                rl_result = env.get_result()
-                performance['RL'] = performance.get('RL', [])
-                performance['RL'].append((rl_result['avg_ue_rate'], rl_result['worst_ue_rate']))
-                break
-            observation = next_observation
+            tti += 1
 
-        # clear the replayer and save the model
-        # agent.replayer.clear()
+        ''' get result '''
+        pf_result = pf_env.get_result()
+        rl_result = rl_env.get_result()
+
+        ''' tti > TTI_SUM but rl_done is not True '''
+        if tti == TTI_SUM:
+            ddpg_agent.learn(None, None, None, None, done=True, store=False)
+
+        ''' clear the replayer and save the model '''
+        ddpg_agent.replayer.clear()
 
         with open('record.txt', 'a') as file:
             record = '{} Epoch={}, ue_idx={}~{}, {} ues_rate:[avg={},worst={}], {} ues_rate:[avg={},worst={}]'.format(
-                datetime.datetime.now(), i, env.av_ues_idx[0], env.av_ues_idx[-1],
+                datetime.datetime.now(), epoch, rl_env.av_ues_idx[0], rl_env.av_ues_idx[-1],
                 'PF', pf_result['avg_ue_rate'], pf_result['worst_ue_rate'],
                 'RL', rl_result['avg_ue_rate'], rl_result['worst_ue_rate'])
             file.write(record)
             file.write('\n')
             file.close()
 
-        if i % 10 == 0 and i is not 0:
-            agent.save(epoch=i)
-
-            PF_avg, PF_worst = zip(*performance['PF'])
-            RL_avg, RL_worst = zip(*performance['RL'])
-
-            better_avg = [(r-p)/ p for p, r in zip(PF_avg, RL_avg)]
-            better_avg_percent = sum(better_avg) / len(better_avg)
-            better_worst = [(r-p)/ p for p, r in zip(PF_worst, RL_worst)]
-            better_worst_percent = sum(better_worst) / len(better_worst)
-            both_better = [1 if (a > 0 and w > 0) else 0 for a, w in zip(better_avg, better_worst)]
-            both_better_percent = sum(both_better) / len(both_better)
-
-            print("better_avg_percent:{}, better_worst_percent:{}, both_better_percent:{}".format(better_avg_percent,
-                 better_worst_percent, both_better_percent))
-
-
-
+        if epoch % 10 == 0 and epoch is not 0:
+            ddpg_agent.save(epoch=epoch)

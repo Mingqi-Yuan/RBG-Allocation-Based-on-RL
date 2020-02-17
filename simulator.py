@@ -16,7 +16,7 @@ MEAN_UE_ARRIVAL_TIME = 100
 CQI_REPORT_PERIOD = 5
 RB_NUM = 50
 RBG_NUM = int(np.ceil(RB_NUM / 3))
-RBG_2_RB = tuple([tuple(range(rbg*3, min(RB_NUM, (rbg+1)*3))) for rbg in range(RBG_NUM)])
+RBG_2_RB = tuple([tuple(range(rbg * 3, min(RB_NUM, (rbg + 1) * 3))) for rbg in range(RBG_NUM)])
 MIN_MCS = 1
 MAX_MCS = 29
 INIT_CQI = 4
@@ -28,13 +28,14 @@ BONUS = 100
 
 temp_1 = 0
 
+
 def load_av_ue_info(file='ue_info.pkl'):
-    assert(os.path.exists(file) == True)
+    assert (os.path.exists(file) == True)
     with open(file, 'rb') as f:
         ues_info = pickle.load(f)
 
-    for ue_idx in range(len(ues_info)-1,-1,-1):
-        if ues_info[ue_idx]['rsrp'] < -130:   # if ue_rsrp < -130, the transimission will fail
+    for ue_idx in range(len(ues_info) - 1, -1, -1):
+        if ues_info[ue_idx]['rsrp'] < -130:  # if ue_rsrp < -130, the transimission will fail
             ues_info.pop(ue_idx)
 
     return ues_info
@@ -82,8 +83,8 @@ class UE:
 
         '''cqi'''
         self.cqi_time = None
-        self.rb_cqi = [INIT_CQI for i in range(RB_NUM)] # cqi to RBG
-        self.wb_cqi = int(np.mean(self.rb_cqi)) # average cqi
+        self.rb_cqi = [INIT_CQI for i in range(RB_NUM)]  # cqi to RBG
+        self.wb_cqi = int(np.mean(self.rb_cqi))  # average cqi
         self.cqi_reported_indicator = 0
 
         '''harq'''
@@ -121,13 +122,13 @@ class UE:
         self.retxing_flag = None
 
     def calc_rbg_rate_by_cqi(self, rb_cqi):
-        rb_rate = [180 * ue_recv.get_se(int(cqi+self.olla_offset*self.olla_enable)) for cqi in rb_cqi]
+        rb_rate = [180 * ue_recv.get_se(int(cqi + self.olla_offset * self.olla_enable)) for cqi in rb_cqi]
         rbg_rate = [sum(rb_rate[rb] for rb in RBG_2_RB[rbg]) for rbg in range(RBG_NUM)]
         return rbg_rate
 
     def calc_rbg_prior(self):
         self.rbg_rate = self.calc_rbg_rate_by_cqi(self.rb_cqi)
-        #self.rbg_prior = [rbg_rate / max(10, self.before_sched_avg_thp) for rbg_rate in self.rbg_rate]
+        # self.rbg_prior = [rbg_rate / max(10, self.before_sched_avg_thp) for rbg_rate in self.rbg_rate]
         self.rbg_prior = [rbg_rate / max(1, self.avg_rate) for rbg_rate in self.rbg_rate]
 
     def update_sched_info(self, retx_flag, harq_id=None):
@@ -142,7 +143,7 @@ class UE:
             self.after_sched_avg_thp = self.before_sched_avg_thp
         else:
             harq_id = self.idle_harq_id
-            assert(harq_id is not None)
+            assert (harq_id is not None)
 
             self.after_sched_idle_harq_num = self.before_sched_idle_harq_num - 1
 
@@ -164,8 +165,8 @@ class UE:
             self.harqs[harq_id].snr_bler = ue_recv.get_snr_bler(self.harqs[harq_id].mcs, self.harqs[harq_id].tb_size)
 
             self.after_sched_buffer = self.before_sched_buffer - self.eff_tb_size
-            assert(self.after_sched_buffer >= 0)
-            self.after_sched_avg_thp = 0.005 * self.tb_size + (1.0-0.005) * self.before_sched_avg_thp
+            assert (self.after_sched_buffer >= 0)
+            self.after_sched_avg_thp = 0.005 * self.tb_size + (1.0 - 0.005) * self.before_sched_avg_thp
 
         self.harqs[harq_id].tx_time.append(self.tti)
         self.harqs[harq_id].rx_time.append(None)
@@ -191,6 +192,14 @@ class UE:
 
     def recv(self):
         for harq_id, harq in enumerate(self.harqs):
+
+            # try:
+            #     print('harq.tb_size={} self.tti={} self.arrival_tti={} harq.tx_time={}'.format(
+            #         harq.tb_size, self.tti, self.arrival_tti, harq.tx_time[-1]))
+            # except:
+            #     print('harq.tb_size={} self.tti={} self.arrival_tti={}'.format(
+            #         harq.tb_size, self.tti, self.arrival_tti))
+
             if harq.tb_size == 0 or self.tti - harq.tx_time[-1] < HARQ_FEEDBACK_PERIOD - 1:
                 continue
 
@@ -250,15 +259,15 @@ class BS():
         self.pf_reward = 0
 
     @property
-    def state(self):   # need to delete some feature
-        assert(len(self.ues) > 0)
+    def state(self):  # need to delete some feature
+        assert (len(self.ues) > 0)
         s = np.zeros((len(self.ues), 21))
         for ue_idx, ue in enumerate(self.ues):
-            s[ue_idx,0] = ue.rsrp
-            s[ue_idx,1] = ue.before_sched_buffer
-            s[ue_idx,2] = ue.cqi_reported_indicator
-            s[ue_idx,3] = ue.avg_rate
-            s[ue_idx,4:21] = np.array(ue.rbg_rate) # mapping to ue.cqi
+            s[ue_idx, 0] = ue.rsrp
+            s[ue_idx, 1] = ue.before_sched_buffer
+            s[ue_idx, 2] = ue.cqi_reported_indicator
+            s[ue_idx, 3] = ue.avg_rate
+            s[ue_idx, 4:21] = np.array(ue.rbg_rate)  # mapping to ue.cqi
         return s
 
     def get_reward(self, ues_eff_tb_size=None):  # modify reward
@@ -269,13 +278,13 @@ class BS():
         eff_tb_size_sum = sum(ues_eff_tb_size)
         worst_ue_idx = ues_avg_rate.index(min(ues_avg_rate))
         worst_ue_rbg_num = len(self.ues[worst_ue_idx].alloc_rbg)
-#         worst_ue_tb_size = ues_eff_tb_size[worst_ue_idx]
+        #         worst_ue_tb_size = ues_eff_tb_size[worst_ue_idx]
         # define worst_ue_reward in another way
-        if ues_eff_tb_size[worst_ue_idx] > 0 :
+        if ues_eff_tb_size[worst_ue_idx] > 0:
             reward = eff_tb_size_sum + BONUS * worst_ue_rbg_num
         else:
             reward = eff_tb_size_sum
-        
+
         return reward
 
     def schedule_retx(self):
@@ -288,7 +297,7 @@ class BS():
 
                 '''1.2. 检查harq需要的所有rbg是否空闲'''
                 rbg_idle_flag = [self.rbg_ue[rbg] == None for rbg in harq.alloc_rbg]
-                assert(False not in rbg_idle_flag)
+                assert (False not in rbg_idle_flag)
                 if False in rbg_idle_flag:
                     continue
 
@@ -304,16 +313,16 @@ class BS():
         '''1. 计算每个ue的每个RBG的rbg_rate'''
         for ue_iidx, ue_idx in enumerate(self.to_newtx_ues_idx):
             ue = self.ues[ue_idx]
-            assert(ue.before_sched_buffer > 0) # make sure only schedule ues with buffer
-            assert(ue.idle_harq_id is not None)
+            assert (ue.before_sched_buffer > 0)  # make sure only schedule ues with buffer
+            assert (ue.idle_harq_id is not None)
             if ue.retxing_flag == True:
-                ue_rbg_prior[ue_iidx,:] = -1
+                ue_rbg_prior[ue_iidx, :] = -1
                 ue_buffer[ue_iidx] = -1
             else:
-                ue_rbg_prior[ue_iidx,:] = np.array(ue.rbg_prior)
+                ue_rbg_prior[ue_iidx, :] = np.array(ue.rbg_prior)
                 ue_buffer[ue_iidx] = ue.before_sched_buffer
-        assert(np.any(np.isnan(ue_rbg_prior)) == False)
-        assert(np.any(np.isnan(ue_buffer)) == False)
+        assert (np.any(np.isnan(ue_rbg_prior)) == False)
+        assert (np.any(np.isnan(ue_buffer)) == False)
 
         '''2. RBG优先级排序'''
         sort_rbg_idx = np.argsort(np.max(ue_rbg_prior, axis=0))[::-1]
@@ -322,14 +331,14 @@ class BS():
         for rbg in sort_rbg_idx:
             '''3.1. 跳过已分配的rbg和没有优先级的rbg'''
             if self.retx_rbg_ue[rbg] != None or \
-               np.all(ue_rbg_prior[:,rbg] < 0) == True:
+                    np.all(ue_rbg_prior[:, rbg] < 0) == True:
                 continue
 
-            assert(self.rbg_ue[rbg] == None)
+            assert (self.rbg_ue[rbg] == None)
 
             '''3.2. 选出prior最大的ue'''
-            ue_iidx = np.argmax(ue_rbg_prior[:,rbg])
-            assert(ue_rbg_prior[ue_iidx,rbg] > 0)
+            ue_iidx = np.argmax(ue_rbg_prior[:, rbg])
+            assert (ue_rbg_prior[ue_iidx, rbg] > 0)
             ue_idx = self.to_newtx_ues_idx[ue_iidx]
             self.rbg_ue[rbg] = ue_idx
             self.newtx_rbg_ue[rbg] = ue_idx
@@ -339,7 +348,7 @@ class BS():
             ''' 3.3. 分配后，如果ue的buffer已空，就把ue_prior设置为-1'''
             ue_buffer[ue_iidx] -= int(self.ues[ue_idx].rbg_rate[rbg])
             if ue_buffer[ue_iidx] <= 0:
-                ue_rbg_prior[ue_iidx,:] = -1
+                ue_rbg_prior[ue_iidx, :] = -1
 
         '''4. 计算PF的reward'''
         ues_eff_tb_size = list()
@@ -364,17 +373,24 @@ class BS():
 
         self.rbg_ue_iidx = [None for i in range(RBG_NUM)]
         for rbg_idx, (pf_ue_idx, rl_ue_idx) in enumerate(zip(self.newtx_rbg_ue, rl_rbg_ue)):
+            ''' 如果不是None，则代表该RBG块需要被用于重传 '''
             if self.retx_rbg_ue[rbg_idx] is not None:
                 continue
-            assert(rl_ue_idx is not None)
+
+            assert (rl_ue_idx is not None)
+            ''' 如果分配结果不在本轮的用户中，或者分配给了需要重传的用户，则进行惩罚'''
             if (rl_ue_idx not in self.to_newtx_ues_idx) or (rl_ue_idx in self.retx_rbg_ue):
                 rl_punish += 500
                 continue
+
             self.rbg_ue[rbg_idx] = rl_ue_idx
             self.newtx_rbg_ue[rbg_idx] = rl_ue_idx
+
             if pf_ue_idx is not None:
                 self.ues[pf_ue_idx].alloc_rbg.remove(rbg_idx)
+
             self.ues[rl_ue_idx].alloc_rbg.append(rbg_idx)
+
         return rl_punish
 
     def schedule_newtx_part3(self):
@@ -382,11 +398,11 @@ class BS():
         for ue_idx in set(self.newtx_rbg_ue):
             if ue_idx is None:
                 continue
-            assert(ue_idx not in self.retx_rbg_ue)
+            assert (ue_idx not in self.retx_rbg_ue)
         for ue_idx in set(self.retx_rbg_ue):
             if ue_idx is None:
                 continue
-            assert(ue_idx not in self.newtx_rbg_ue)
+            assert (ue_idx not in self.newtx_rbg_ue)
 
         '''4. 更新ue的调度结果'''
         for ue_idx in set(self.newtx_rbg_ue):
@@ -412,13 +428,17 @@ class BS():
             ue.update_harq()
             ue.calc_rbg_prior()
 
+            ''' 找出下一个tti需要重传的用户 '''
             for harq in ue.harqs:
                 if harq.tb_size > 0 and harq.ack[-1] != None:
-                    assert(harq.ack[-1] == False)
+                    assert (harq.ack[-1] == False)
                     self.to_retx_ues_idx.append(ue_idx)
                     break
+            ''' 判定需要进入下一个tti的用户 '''
             if ue.before_sched_buffer > 0 and ue.idle_harq_id is not None:
                 self.to_newtx_ues_idx.append(ue_idx)
+
+        # print('self.to_newtx_ues_idx={} self.to_retx_ues_idx={}'.format(self.to_newtx_ues_idx, self.to_retx_ues_idx))
 
     def update_cqi(self):
         for ue in self.ues:
@@ -453,16 +473,26 @@ class AIRVIEW:
         if len(self.bs.to_newtx_ues_idx) > 0:
             self.bs.schedule_newtx_part1()
 
-        return self.bs.state
+        state = {
+            'user_info': None,
+            'rbg_avl': None,
+            'tx_user': None}
+
+        state['user_info'] = self.bs.state[self.bs.to_newtx_ues_idx]
+        state['rbg_avl'] = self.bs.retx_rbg_ue
+        state['tx_user'] = self.bs.to_newtx_ues_idx
+
+        return state
 
     def new_ue_arrive(self):
-        '''new ue arrive'''
+        """ 对于每一个用户，构建一个UE对象，并将其添加进self.bs.ues """
         for av_ue_idx in self.av_ues_idx:
             ue_info = self.av_ues_info[av_ue_idx]
             new_ue = UE(len(self.bs.ues), self.tti, ue_info, OLLA_ENABLE)
             self.bs.ues.append(new_ue)
 
     def get_result(self):
+        """ 计算所有用户的平均使用速率 """
         ues_rate = list()
         for ue in self.bs.ues:
             last_rx_time = 0
@@ -475,81 +505,90 @@ class AIRVIEW:
         worst_ue_rate = min(ues_rate)
         return {'avg_ue_rate': avg_ue_rate, 'worst_ue_rate': worst_ue_rate}
 
-    def step(self, action):
+    def step(self, action, possion_add_user):
+        global rl_punish
         done_flag = False
-        while True:
-            '''bs sched'''
-            if done_flag == False:
-                rl_punish = self.bs.schedule_newtx_part2(action) # vs. self.get_reward() ???
 
-            self.bs.schedule_newtx_part3()
+        ''' 获取RL算法的punish并进行资源调度，若是action为None，则punish为0 '''
+        if done_flag == False:
+            rl_punish = self.bs.schedule_newtx_part2(action)  # vs. self.get_reward() ???
+            ''' 更新ue的调度结果，与action无关 '''
+        self.bs.schedule_newtx_part3()
 
-            if done_flag == False:
-         #      reward = self.bs.get_reward() - rl_punish - self.bs.pf_reward
-                if rl_punish > 0:
-                    reward = -1
-                else: 
-                    reward = self.bs.get_reward()
+        # self.show_information(operation='after schedule_newtx_part2 schedule_newtx_part3')
 
-            '''ue recv'''
-            for ue in self.bs.ues:
-                ue.recv()
+        if done_flag == False:
+            ''' 计算reward '''
+            if rl_punish > 0:
+                reward = -1
+            else:
+                reward = self.bs.get_reward()
 
-            self.tti += 1
-            self.bs.tti = self.tti
-            for ue in self.bs.ues:
-                ue.tti = self.tti
+            ''' 查看用户对应的8个harq进程的状态，找到需要重传的harq进程 '''
+        for ue in self.bs.ues:
+            ue.recv()
 
-            self.bs.update_cqi()
+        self.tti += 1
+        self.bs.tti = self.tti
+        for ue in self.bs.ues:
+            ue.tti = self.tti
+        ''' 更新cqi '''
+        self.bs.update_cqi()
 
-            self.bs.schedule_init()
+        ''' 基于泊松分布产生的随机数添加user '''
+        num_add_user = possion_add_user
+        for i in range(num_add_user):
+            ue_id = len(self.bs.ues)
+            ue_info = self.av_ues_info[ue_id]
+            new_ue = UE(ue_id, self.tti, ue_info, OLLA_ENABLE)
+            self.bs.ues.append(new_ue)
 
-            if len(self.bs.to_retx_ues_idx) > 0:
-                self.bs.schedule_retx()
+        self.bs.schedule_init()
+        # self.show_information(operation='after schedule_init')
 
-            if len(self.bs.to_newtx_ues_idx) > 0:
-                self.bs.schedule_newtx_part1()
+        if len(self.bs.to_retx_ues_idx) > 0:
+            ''' 如果有需要重传的用户，解析其harq进程，并更新调度结果 '''
+            self.bs.schedule_retx()
+            # self.show_information(operation='after schedule_retx')
 
-            if done_flag == False:
-                state = self.bs.state
+        if len(self.bs.to_newtx_ues_idx) > 0:
+            ''' 计算下一个tti的PF schedule'''
+            self.bs.schedule_newtx_part1()
+            # self.show_information(operation='schedule_newtx_part1 PF schedule')
 
-            done_flag |= self.is_done()
-            exit_flag = self.is_exit()
+        state = {
+            'user_info':None,
+            'rbg_avl':None,
+            'tx_user':None}
 
-            if done_flag == False or exit_flag == True:
-                break
+        state['user_info'] = self.bs.state[self.bs.to_newtx_ues_idx]
+        state['rbg_avl'] = self.bs.retx_rbg_ue
+        state['tx_user'] = self.bs.to_newtx_ues_idx
+
+        done_flag = self.is_done()
 
         return state, reward, done_flag, {}
 
-    def is_exit(self):
-        # for tti in range(MAX_TTI):
-        #     self.step(tti)
-
-        ues_buffers = list()
-        for ue_idx, ue in enumerate(self.bs.ues):
-            harq_buffer = sum([harq.tb_size for harq in ue.harqs])
-            ues_buffers.append(harq_buffer + ue.before_sched_buffer)
-        if sorted(ues_buffers)[-2] == 0: # only one user in the system
-            return True
-            # break
-        return False
-
     def is_done(self):
-        # for tti in range(MAX_TTI):
-        #     self.step(tti)
-
         ues_buffers = list()
         for ue_idx, ue in enumerate(self.bs.ues):
             harq_buffer = sum([harq.tb_size for harq in ue.harqs])
             ues_buffers.append(harq_buffer + ue.before_sched_buffer)
-        if sorted(ues_buffers)[-2] == 0: # only one user in the system
+        # print('ues_buffers={}'.format(ues_buffers))
+        if sorted(ues_buffers)[-2] == 0:  # only one user in the system
             return True
-#        for ue in self.bs.ues:
-#            if ue.idle_harq_id is None:
-#                return True
-#        if len(self.bs.to_retx_ues_idx) > 0:
-#            return T
         return False
 
+    def show_information(self, operation):
+        print('tti={}'.format(self.tti))
+        print('operation={}'.format(operation))
+        print('bs.ues={}'.format(self.bs.ues))
+        print('bs.rbg_ue={}'.format(self.bs.rbg_ue))
+        print('bs.rbg_ue_iidx={}'.format(self.bs.rbg_ue_iidx))
+        print('bs.newtx_rbg_ue={}'.format(self.bs.newtx_rbg_ue))
+        print('bs.retx_rbg_ue={}'.format(self.bs.retx_rbg_ue))
+        print('bs.to_newtx_ues_idx={}'.format(self.bs.to_newtx_ues_idx))
+        print('bs.to_retx_ues_idx={}'.format(self.bs.to_retx_ues_idx))
+        print('bs.pf_reward={}'.format(self.bs.pf_reward))
+        print('\n')
 
-                
