@@ -368,7 +368,8 @@ class BS():
 
     def schedule_newtx_part2(self, rl_rbg_ue):
         rl_punish = 0
-        if rl_rbg_ue is None:
+        ''' 所有RBG块均被用于重传 '''
+        if (rl_rbg_ue is None) or (rl_rbg_ue == [None for _ in range(RBG_NUM)]):
             return rl_punish
 
         self.rbg_ue_iidx = [None for i in range(RBG_NUM)]
@@ -539,7 +540,8 @@ class AIRVIEW:
         num_add_user = possion_add_user
         for i in range(num_add_user):
             ue_id = len(self.bs.ues)
-            ue_info = self.av_ues_info[ue_id]
+            ues_idx = np.random.randint(0, 1650, 1)[0]
+            ue_info = self.av_ues_info[ues_idx]
             new_ue = UE(ue_id, self.tti, ue_info, OLLA_ENABLE)
             self.bs.ues.append(new_ue)
 
@@ -570,14 +572,18 @@ class AIRVIEW:
         return state, reward, done_flag, {}
 
     def is_done(self):
-        ues_buffers = list()
-        for ue_idx, ue in enumerate(self.bs.ues):
-            harq_buffer = sum([harq.tb_size for harq in ue.harqs])
-            ues_buffers.append(harq_buffer + ue.before_sched_buffer)
-        # print('ues_buffers={}'.format(ues_buffers))
-        if sorted(ues_buffers)[-2] == 0:  # only one user in the system
+        if self.tti == 5000:
             return True
-        return False
+        else:
+            return False
+        # ues_buffers = list()
+        # for ue_idx, ue in enumerate(self.bs.ues):
+        #     harq_buffer = sum([harq.tb_size for harq in ue.harqs])
+        #     ues_buffers.append(harq_buffer + ue.before_sched_buffer)
+        # # print('ues_buffers={}'.format(ues_buffers))
+        # if sorted(ues_buffers)[-2] == 0:  # only one user in the system
+        #     return True
+        # return False
 
     def show_information(self, operation):
         print('tti={}'.format(self.tti))

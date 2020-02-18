@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 
+
 class Network:
     def __init__(self):
         pass
@@ -40,12 +41,13 @@ class Network:
         x = tf.keras.layers.LeakyReLU(alpha=0.1)(x)
 
         shortcut = tf.keras.layers.Conv2D(filters3, (1, 1), strides=strides,
-                                 kernel_initializer='he_normal')(input_tensor)
+                                          kernel_initializer='he_normal')(input_tensor)
         shortcut = tf.keras.layers.BatchNormalization()(shortcut)
 
         x = tf.keras.layers.add([x, shortcut])
         x = tf.keras.layers.Activation('relu')(x)
         return x
+
 
 class Actor:
     def __init__(self, user_num, feature_num, rbg_num, lr):
@@ -55,19 +57,19 @@ class Actor:
         self.lr = lr
 
     def get_network(self, inputs):
-        x = tf.keras.layers.Conv2D(64, kernel_size=(3,3), strides=(1,3), padding='same')(inputs)
+        x = tf.keras.layers.Conv2D(64, kernel_size=(3, 3), strides=(1, 3), padding='same')(inputs)
         x = tf.keras.layers.BatchNormalization()(x)
         x = tf.keras.layers.LeakyReLU(alpha=0.1)(x)
 
-        x = tf.keras.layers.Conv2D(64, kernel_size=(1,2), strides=(1,2), padding='valid')(x)
+        x = tf.keras.layers.Conv2D(64, kernel_size=(1, 2), strides=(1, 2), padding='valid')(x)
         x = tf.keras.layers.BatchNormalization()(x)
         x = tf.keras.layers.LeakyReLU(alpha=0.1)(x)
 
-        x = tf.keras.layers.Conv2D(64, kernel_size=(1,1), strides=(1,3), padding='same')(x)
+        x = tf.keras.layers.Conv2D(64, kernel_size=(1, 1), strides=(1, 3), padding='same')(x)
         x = tf.keras.layers.BatchNormalization()(x)
         x = tf.keras.layers.LeakyReLU(alpha=0.1)(x)
 
-        x = tf.keras.layers.Conv2D(self.rbg_num, (1,1))(x)
+        x = tf.keras.layers.Conv2D(self.rbg_num, (1, 1))(x)
         outputs = tf.keras.layers.Softmax(axis=1)(x[:, :, 0, :])
 
         return outputs
@@ -75,13 +77,14 @@ class Actor:
     def build(self):
         inputs = tf.keras.Input([self.user_num, self.feature_num, 1])
         outputs = self.get_network(inputs)
-        model = tf.keras.Model(inputs=inputs, outputs = outputs)
+        model = tf.keras.Model(inputs=inputs, outputs=outputs)
         model.compile(
             optimizer=tf.keras.optimizers.Adam(self.lr),
             loss='mse'
         )
 
         return model
+
 
 class Critic:
     def __init__(self, user_num, feature_num, rbg_num, lr):
@@ -121,6 +124,7 @@ class Critic:
 
         return model
 
+
 class Replayer:
     def __init__(self, capacity):
         self.memory = pd.DataFrame(
@@ -143,6 +147,7 @@ class Replayer:
 
     def clear(self):
         self.__init__(capacity=self.capacity)
+
 
 class DDPGAgent:
     def __init__(self,
@@ -198,33 +203,37 @@ class DDPGAgent:
         eval_weights = eval_net.get_weights()
 
         avg_weights = [(1. - lr) * t + lr * e
-                       for t,e in zip(target_weights, eval_weights)]
+                       for t, e in zip(target_weights, eval_weights)]
 
         target_net.set_weights(avg_weights)
 
     def decide(self, state):
-        ob = state['user_info']
-        ob = tf.convert_to_tensor(ob, tf.float32)
-        ob = tf.expand_dims(ob, 0)
+        ''' no user, no action '''
+        if len(state['tx_user']) == 0:
+            return {'action': None, 'softmax_score': None}
+        else:
+            ob = state['user_info']
+            ob = tf.convert_to_tensor(ob, tf.float32)
+            ob = tf.expand_dims(ob, 0)
 
-        pred = self.actor_eval_net.predict(ob[..., tf.newaxis])
-        action = tf.argmax(pred, axis=1).numpy().tolist()[0]
+            pred = self.actor_eval_net.predict(ob[..., tf.newaxis])
+            action = tf.argmax(pred, axis=1).numpy().tolist()[0]
 
-        for i in range(self.rbg_num):
-            if state['rbg_avl'][i] is not None:
-                action[i] = None
-                continue
-            for j in range(len(state['tx_user'])):
-                if action[i] == j:
-                    action[i] = state['tx_user'][j]
+            for i in range(self.rbg_num):
+                if state['rbg_avl'][i] is not None:
+                    action[i] = None
+                    continue
+                for j in range(len(state['tx_user'])):
+                    if action[i] == j:
+                        action[i] = state['tx_user'][j]
 
-        return {'action':action, 'softmax_score':pred}
+            return {'action': action, 'softmax_score': pred}
 
     def learn(self, state, action, reward, next_state, done, store=True):
-        if store:
+        if store and action is not None:
             self.replayer.store(state, action, reward, next_state, done)
 
-        if True:
+        if done:
             sample = self.replayer.sample(self.sample_frac)
             for index in sample.index:
                 try:
@@ -294,5 +303,3 @@ class DDPGAgent:
 #             pred[i] = to_newtx_ues_idx[j]
 #
 # print(pred)
-
-
