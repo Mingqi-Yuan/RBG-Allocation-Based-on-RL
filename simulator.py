@@ -5,6 +5,7 @@ Created on Mon Sep 23 10:32:10 2019
 @author: tao
 """
 
+import tensorflow as tf
 import numpy as np
 import ue_recv
 import os
@@ -24,7 +25,7 @@ OLLA_ENABLE = True
 HARQ_NUM = 8
 MAX_TX_TIME = 5
 HARQ_FEEDBACK_PERIOD = 8
-BONUS = 100
+BONUS = 0.1
 
 temp_1 = 0
 
@@ -244,11 +245,11 @@ class UE:
                 self.idle_harq_id = harq_id if self.idle_harq_id == None else self.idle_harq_id
 
 class BS():
-    def __init__(self):
+    def __init__(self, lambda_avg, lambda_fairness):
         self.is_rl_sched = True
-        self.reset()
+        self.reset(lambda_avg, lambda_fairness)
 
-    def reset(self):
+    def reset(self, lambda_avg, lambda_fairness):
         self.ues = list()
         self.rbg_ue = [None for _ in range(RBG_NUM)]
         self.rbg_ue_iidx = [None for _ in range(RBG_NUM)]
@@ -257,6 +258,8 @@ class BS():
         self.to_newtx_ues_idx = list()
         self.to_retx_ues_idx = list()
         self.pf_reward = 0
+        self.lambda_avg = lambda_avg
+        self.lambda_fairness = lambda_fairness
 
     @property
     def state(self):  # need to delete some feature
@@ -268,24 +271,39 @@ class BS():
             s[ue_idx, 2] = ue.cqi_reported_indicator
             s[ue_idx, 3] = ue.avg_rate
             s[ue_idx, 4:21] = np.array(ue.rbg_rate)  # mapping to ue.cqi
+
         return s
 
-    def get_reward(self, ues_eff_tb_size=None):  # modify reward
-        '''reward'''
-        if ues_eff_tb_size == None:
-            ues_eff_tb_size = [ue.eff_tb_size for ue in self.ues]
-        ues_avg_rate = [ue.avg_rate for ue in self.ues]
-        eff_tb_size_sum = sum(ues_eff_tb_size)
-        worst_ue_idx = ues_avg_rate.index(min(ues_avg_rate))
-        worst_ue_rbg_num = len(self.ues[worst_ue_idx].alloc_rbg)
-        #         worst_ue_tb_size = ues_eff_tb_size[worst_ue_idx]
-        # define worst_ue_reward in another way
-        if ues_eff_tb_size[worst_ue_idx] > 0:
-            reward = eff_tb_size_sum + BONUS * worst_ue_rbg_num
+    def jains_fairness_index(self, use_rate):
+        if list(set(use_rate)) == [0]:
+            return 0
         else:
-            reward = eff_tb_size_sum
+            x = np.array(use_rate)
+            x = (np.power(np.mean(x), 2)) / (np.mean(np.power(x, 2)))
+            return x
+
+    def get_reward(self):  # modify reward
+        ues_rate = list()
+        for index in self.to_newtx_ues_idx:
+            ue = self.ues[index]
+            last_rx_time = 0
+            recv_ack_tbs_size = 0
+            for tb in ue.tbs:
+                recv_ack_tbs_size += tb['eff_tb_size'] * tb['ack'][-1]
+                last_rx_time = max(last_rx_time, tb['rx_time'][-1])
+            ues_rate.append(recv_ack_tbs_size / (last_rx_time - ue.arrival_tti) if last_rx_time != 0 else 0)
+
+        ues_eff_tb_size = []
+        for user_index in self.to_newtx_ues_idx:
+            ues_eff_tb_size.append(self.ues[user_index].eff_tb_size)
+        eff_tb_size_sum = sum(ues_eff_tb_size)
+
+        part1 = np.log(eff_tb_size_sum + 1) / np.log(self.lambda_avg)
+        part2 = np.power(self.jains_fairness_index(ues_rate), self.lambda_fairness)
+        reward = part1 + part2
 
         return reward
+
 
     def schedule_retx(self):
         for ue_idx in self.to_retx_ues_idx:
@@ -350,21 +368,21 @@ class BS():
             if ue_buffer[ue_iidx] <= 0:
                 ue_rbg_prior[ue_iidx, :] = -1
 
-        '''4. 计算PF的reward'''
-        ues_eff_tb_size = list()
-        for ue_idx, ue in enumerate(self.ues):
-            if len(ue.alloc_rbg) > 0:
-                alloc_rb = rbgs_2_rbs(ue.alloc_rbg)
-                alloc_rb_mcs = [ue.rb_cqi[rb] for rb in alloc_rb]
-                mcs = int(np.mean(alloc_rb_mcs))
-                mcs = int(mcs + ue.olla_offset * ue.olla_enable)
-                mcs = max(MIN_MCS, min(MAX_MCS, mcs))
-                tb_size = int(180 * ue_recv.get_se(mcs) * len(alloc_rb))
-                eff_tb_size = min(tb_size, ue.before_sched_buffer)
-            else:
-                eff_tb_size = 0
-            ues_eff_tb_size.append(eff_tb_size)
-        self.pf_reward = self.get_reward(ues_eff_tb_size)
+        # '''4. 计算PF的reward'''
+        # ues_eff_tb_size = list()
+        # for ue_idx, ue in enumerate(self.ues):
+        #     if len(ue.alloc_rbg) > 0:
+        #         alloc_rb = rbgs_2_rbs(ue.alloc_rbg)
+        #         alloc_rb_mcs = [ue.rb_cqi[rb] for rb in alloc_rb]
+        #         mcs = int(np.mean(alloc_rb_mcs))
+        #         mcs = int(mcs + ue.olla_offset * ue.olla_enable)
+        #         mcs = max(MIN_MCS, min(MAX_MCS, mcs))
+        #         tb_size = int(180 * ue_recv.get_se(mcs) * len(alloc_rb))
+        #         eff_tb_size = min(tb_size, ue.before_sched_buffer)
+        #     else:
+        #         eff_tb_size = 0
+        #     ues_eff_tb_size.append(eff_tb_size)
+        # self.pf_reward = self.get_reward()
 
     def schedule_newtx_part2(self, rl_rbg_ue):
         rl_punish = 0
@@ -378,11 +396,11 @@ class BS():
             if self.retx_rbg_ue[rbg_idx] is not None:
                 continue
 
-            assert (rl_ue_idx is not None)
-            ''' 如果分配结果不在本轮的用户中，或者分配给了需要重传的用户，则进行惩罚'''
-            if (rl_ue_idx not in self.to_newtx_ues_idx) or (rl_ue_idx in self.retx_rbg_ue):
-                rl_punish += 500
-                continue
+            # assert (rl_ue_idx is not None)
+            # ''' 如果分配结果不在本轮的用户中，或者分配给了需要重传的用户，则进行惩罚'''
+            # if (rl_ue_idx not in self.to_newtx_ues_idx) or (rl_ue_idx in self.retx_rbg_ue):
+            #     rl_punish += 500
+            #     continue
 
             self.rbg_ue[rbg_idx] = rl_ue_idx
             self.newtx_rbg_ue[rbg_idx] = rl_ue_idx
@@ -392,10 +410,9 @@ class BS():
 
             self.ues[rl_ue_idx].alloc_rbg.append(rbg_idx)
 
-        return rl_punish
-
     def schedule_newtx_part3(self):
         '''check newtx and retx'''
+        # print('newtx_rbg_ue', self.newtx_rbg_ue)
         for ue_idx in set(self.newtx_rbg_ue):
             if ue_idx is None:
                 continue
@@ -446,12 +463,14 @@ class BS():
             ue.update_cqi()
 
 class AIRVIEW:
-    def __init__(self):
+    def __init__(self, lambda_avg, lambda_fairness):
         self.tti = 0
         self.av_ues_info = list()
         self.av_ues_idx = list()
         self.ue_num = 0
-        self.bs = BS()
+        self.lambda_avg = lambda_avg
+        self.lambda_fairness = lambda_fairness
+        self.bs = BS(self.lambda_avg, self.lambda_fairness)
         self.history = dict()
         self.result = None
 
@@ -460,7 +479,7 @@ class AIRVIEW:
         self.av_ues_info = av_ues_info
         self.av_ues_idx = av_ues_idx
         self.ue_num = len(av_ues_idx)
-        self.bs.reset()
+        self.bs.reset(self.lambda_avg, self.lambda_fairness)
         self.history = dict()
         self.result = None
 
@@ -502,32 +521,50 @@ class AIRVIEW:
                 recv_ack_tbs_size += tb['eff_tb_size'] * tb['ack'][-1]
                 last_rx_time = max(last_rx_time, tb['rx_time'][-1])
             ues_rate.append(recv_ack_tbs_size / (last_rx_time - ue.arrival_tti) if last_rx_time != 0 else 0)
-        avg_ue_rate = np.mean(ues_rate)
-        worst_ue_rate = min(ues_rate)
-        return {'avg_ue_rate': avg_ue_rate, 'worst_ue_rate': worst_ue_rate}
 
-    def step(self, action, possion_add_user):
+        avg_ue_rate = np.mean(ues_rate)
+        five_tile_ue_rate = sorted(ues_rate)[round(len(self.bs.ues) * 0.05)]
+
+        return {'avg_ue_rate': avg_ue_rate, 'five_tile_rate':five_tile_ue_rate}
+
+    def step(self, action, possion_add_user, user_start):
         global rl_punish
         done_flag = False
 
         ''' 获取RL算法的punish并进行资源调度，若是action为None，则punish为0 '''
-        if done_flag == False:
-            rl_punish = self.bs.schedule_newtx_part2(action)  # vs. self.get_reward() ???
-            ''' 更新ue的调度结果，与action无关 '''
-        self.bs.schedule_newtx_part3()
+        self.bs.schedule_newtx_part2(action)  # vs. self.get_reward() ???
+        ''' 更新ue的调度结果，与action无关 '''
 
-        # self.show_information(operation='after schedule_newtx_part2 schedule_newtx_part3')
+        self.bs.schedule_newtx_part3()
 
         if done_flag == False:
             ''' 计算reward '''
-            if rl_punish > 0:
-                reward = -1
+            if len(self.bs.to_newtx_ues_idx) == 0:
+                reward = 0
             else:
                 reward = self.bs.get_reward()
 
-            ''' 查看用户对应的8个harq进程的状态，找到需要重传的harq进程 '''
+        ''' 查看用户对应的8个harq进程的状态，找到需要重传的harq进程 '''
         for ue in self.bs.ues:
             ue.recv()
+
+        # with open('simulator.txt', 'a') as pf:
+        #     pf.write('tti:%d\r\n' %(self.tti))
+        #     for ue in self.bs.ues:
+        #         pf.write('ue:%d, rsrp:%.0f, buffer:[%d,%d], rate:%.0e, after_sched_avg_thp:%.1f, idle_harq_num:%d' \
+        #                  %(ue.id, ue.rsrp, ue.before_sched_buffer, ue.after_sched_buffer, \
+        #                    ue.avg_rate, ue.after_sched_avg_thp, ue.before_sched_idle_harq_num))
+        #         pf.write('\r\n      cqi:')
+        #         for cqi in ue.rb_cqi:
+        #             pf.write('%.d, ' %(cqi))
+        #         pf.write('\r\n      prior:')
+        #         for prior in ue.rbg_prior:
+        #             pf.write('%.1f, ' %(prior))
+        #         pf.write('\r\n      alloc_rbg:')
+        #         for rbg in ue.alloc_rbg:
+        #             pf.write('%d, ' %(rbg))
+        #         pf.write('\r\n      olla=%.2f, mcs=%s, tb_size=%d, eff_tb_size=%d, retx=%s\r\n' \
+        #                  %(ue.olla_offset, ue.mcs, ue.tb_size, ue.eff_tb_size, ue.retxing_flag))
 
         self.tti += 1
         self.bs.tti = self.tti
@@ -538,12 +575,14 @@ class AIRVIEW:
 
         ''' 基于泊松分布产生的随机数添加user '''
         num_add_user = possion_add_user
-        for i in range(num_add_user):
-            ue_id = len(self.bs.ues)
-            ues_idx = np.random.randint(0, 1650, 1)[0]
-            ue_info = self.av_ues_info[ues_idx]
-            new_ue = UE(ue_id, self.tti, ue_info, OLLA_ENABLE)
-            self.bs.ues.append(new_ue)
+        if num_add_user != 0:
+            for i in range(num_add_user):
+                ue_id = len(self.bs.ues)
+                ue_info = self.av_ues_info[ue_id+user_start]
+                new_ue = UE(ue_id, self.tti, ue_info, OLLA_ENABLE)
+                self.bs.ues.append(new_ue)
+        else:
+            pass
 
         self.bs.schedule_init()
         # self.show_information(operation='after schedule_init')
@@ -563,9 +602,21 @@ class AIRVIEW:
             'rbg_avl':None,
             'tx_user':None}
 
-        state['user_info'] = self.bs.state[self.bs.to_newtx_ues_idx]
         state['rbg_avl'] = self.bs.retx_rbg_ue
         state['tx_user'] = self.bs.to_newtx_ues_idx
+        # print('rbg_avl', state['rbg_avl'])
+        # print('be_tx_user', state['tx_user'])
+        ''' 确保重传用户不会进入新的传输用户名单 '''
+        tx_user = []
+        try:
+            for i in range(len(state['tx_user'])):
+                if state['tx_user'][i] not in state['rbg_avl']:
+                    tx_user.append(state['tx_user'][i])
+        except:
+            pass
+        state['tx_user'] = tx_user
+        # print('af_tx_user', state['tx_user'])
+        state['user_info'] = self.bs.state[state['tx_user']]
 
         done_flag = self.is_done()
 
