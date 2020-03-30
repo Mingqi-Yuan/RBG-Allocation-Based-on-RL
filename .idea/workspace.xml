@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e01de69-9184-4cfa-ba64-9400da31b804" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/DDPG_for_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/DDPG_for_simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/DDPG_of_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/DDPG_of_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/learn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-MCS/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/ddpg_rbg.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/ddpg_rbg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/mcs_bler-mcs1~14frame=500,15~29frame=100.mat" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/mcs_bler-mcs1~14frame=500,15~29frame=100.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/ue_recv.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG/ue_recv.py" afterDir="false" />
+    <list default="true" id="674d08ba-2d7c-49ad-8cb7-aa72c50bce85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/DDPG_for_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/DDPG_for_simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/DDPG_of_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/DDPG_of_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/learn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-MCS/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ac_rbg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ac_rbg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ddpg_rbg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ddpg_rbg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/mcs_bler-mcs1~14frame=500,15~29frame=100.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/mcs_bler-mcs1~14frame=500,15~29frame=100.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/model_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/model_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ue_recv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG/ue_recv.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,19 +31,22 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Reference/From Mr.Zeng/RL-for-RBG" />
   </component>
-  <component name="ProjectId" id="1XNf2d13LnMCTqpzftEnaEPklLS" />
+  <component name="ProjectId" id="1ZKmKfSPRrmHKI32M4fBUtUjBe6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reference/From Mr.Zeng" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RL-Opportunistic" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Friedrich Gauss\Desktop\RBG Allocation Based on RL\RL-Opportunistic\simulator" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Friedrich Gauss\Desktop\RGB Allocation Based on RL" />
+      <recent name="C:\Users\Friedrich Gauss\Desktop\RBG Allocation Based on RL\RL-Opportunistic" />
+      <recent name="C:\Users\Friedrich Gauss\Desktop\RBG Allocation Based on RL\RL-Opportunistic\s" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,21 +61,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="DDPG" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RGB Allocation Based on RL" />
+  <component name="RunManager" selected="Python.eval_bursty">
+    <configuration name="eval_bursty" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RBG Allocation Based on RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RL-Opportunistic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/DDPG.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RL-Opportunistic/eval_bursty.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,20 +84,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SoftAC" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RGB Allocation Based on RL" />
+    <configuration name="eval_fullbuffer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RBG Allocation Based on RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RL-Opportunistic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/SoftAC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RL-Opportunistic/eval_fullbuffer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,42 +106,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="algorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RGB Allocation Based on RL" />
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RBG Allocation Based on RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RL-Proportional Fairness" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RGB Allocation Based on RL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Friedrich Gauss\Desktop\RGB Allocation Based on RL\algorithm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RL-Proportional Fairness/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,19 +129,41 @@
       <method v="2" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RGB Allocation Based on RL" />
+      <module name="RBG Allocation Based on RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RL-Opportunistic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RL-Opportunistic/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RBG Allocation Based on RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RL-Opportunistic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RL-Opportunistic/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.eval_bursty" />
+        <item itemvalue="Python.eval_fullbuffer" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.SoftAC" />
-        <item itemvalue="Python.algorithm" />
-        <item itemvalue="Python.DDPG" />
-        <item itemvalue="Python.model" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,19 +187,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e01de69-9184-4cfa-ba64-9400da31b804" name="Default Changelist" comment="" />
-      <created>1580891266107</created>
+      <changelist id="674d08ba-2d7c-49ad-8cb7-aa72c50bce85" name="Default Changelist" comment="" />
+      <created>1584596097634</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580891266107</updated>
-      <workItem from="1580891271948" duration="10113000" />
-      <workItem from="1580959222898" duration="26650000" />
-      <workItem from="1581044432373" duration="23212000" />
-      <workItem from="1581088173046" duration="13269000" />
-      <workItem from="1581227743832" duration="2245000" />
-      <workItem from="1581298689753" duration="21072000" />
-      <workItem from="1581395962645" duration="18779000" />
-      <workItem from="1581473463419" duration="18767000" />
+      <updated>1584596097634</updated>
+      <workItem from="1584596101651" duration="541000" />
+      <workItem from="1584596657183" duration="75216000" />
+      <workItem from="1584929579331" duration="6684000" />
+      <workItem from="1585018917878" duration="24673000" />
+      <workItem from="1585185862738" duration="7423000" />
+      <workItem from="1585230663786" duration="3297000" />
+      <workItem from="1585399566555" duration="1331000" />
+      <workItem from="1585401221979" duration="3546000" />
+      <workItem from="1585534284096" duration="5354000" />
     </task>
     <servers />
   </component>
@@ -214,14 +221,11 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$ddpg_rbg.coverage" NAME="ddpg_rbg Coverage Results" MODIFIED="1580980378589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$algorithm.coverage" NAME="algorithm Coverage Results" MODIFIED="1581414526309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$simulator.coverage" NAME="simulator Coverage Results" MODIFIED="1580965060607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1581414406461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$SoftAC.coverage" NAME="SoftAC Coverage Results" MODIFIED="1581474296580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$eval.coverage" NAME="eval Coverage Results" MODIFIED="1581142397591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$cdf_plot.coverage" NAME="cdf_plot Coverage Results" MODIFIED="1581302715569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reference/From Mr.Zeng/RL-for-RBG" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$model.coverage" NAME="model Coverage Results" MODIFIED="1581320656077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RGB_Allocation_Based_on_RL$test.coverage" NAME="test Coverage Results" MODIFIED="1581479751850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$test.coverage" NAME="test Coverage Results" MODIFIED="1585027518101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Opportunistic" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$eval_bursty.coverage" NAME="eval_bursty Coverage Results" MODIFIED="1585186205268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Opportunistic" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1584697858220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Proportional Fairness" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$eval_fullbuffer.coverage" NAME="eval_fullbuffer Coverage Results" MODIFIED="1585120221499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Opportunistic" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$train.coverage" NAME="train Coverage Results" MODIFIED="1585022839644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Opportunistic" />
+    <SUITE FILE_PATH="coverage/RBG_Allocation_Based_on_RL$Opportunistic.coverage" NAME="Opportunistic Coverage Results" MODIFIED="1584680629619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RL-Opportunistic" />
   </component>
 </project>
