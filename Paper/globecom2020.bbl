@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{marsland2014machine}
+S.~Marsland, {\em Machine learning: an algorithmic perspective}.
+\newblock Chapman and Hall/CRC, 2014.
+
+\bibitem{shi2011iteratively}
+Q.~Shi, M.~Razaviyayn, Z.-Q. Luo, and C.~He, ``An iteratively weighted mmse
+  approach to distributed sum-utility maximization for a mimo interfering
+  broadcast channel,'' {\em IEEE Transactions on Signal Processing}, vol.~59,
+  no.~9, pp.~4331--4340, 2011.
+
+\bibitem{sun2018learning}
+H.~Sun, X.~Chen, Q.~Shi, M.~Hong, X.~Fu, and N.~D. Sidiropoulos, ``Learning to
+  optimize: Training deep neural networks for interference management,'' {\em
+  IEEE Transactions on Signal Processing}, vol.~66, no.~20, pp.~5438--5453,
+  2018.
+
+\bibitem{liang2018towards}
+F.~Liang, C.~Shen, W.~Yu, and F.~Wu, ``Towards optimal power control via
+  ensembling deep neural networks,'' {\em arXiv preprint arXiv:1807.10025},
+  2018.
+
+\bibitem{sato2019approximation}
+R.~Sato, M.~Yamada, and H.~Kashima, ``Approximation ratios of graph neural
+  networks for combinatorial problems,'' in {\em Advances in Neural Information
+  Processing Systems}, pp.~4083--4092, 2019.
+
+\bibitem{ghadimi2017reinforcement}
+E.~Ghadimi, F.~D. Calabrese, G.~Peters, and P.~Soldati, ``A reinforcement
+  learning approach to power control and rate adaptation in cellular
+  networks,'' in {\em 2017 IEEE International Conference on Communications
+  (ICC)}, pp.~1--7, IEEE, 2017.
+
+\bibitem{bruno2014robust}
+R.~Bruno, A.~Masaracchia, and A.~Passarella, ``Robust adaptive modulation and
+  coding (amc) selection in lte systems using reinforcement learning,'' in {\em
+  2014 IEEE 80th Vehicular Technology Conference (VTC2014-Fall)}, pp.~1--6,
+  IEEE, 2014.
+
+\bibitem{o2017introduction}
+T.~O¡¯Shea and J.~Hoydis, ``An introduction to deep learning for the physical
+  layer,'' {\em IEEE Transactions on Cognitive Communications and Networking},
+  vol.~3, no.~4, pp.~563--575, 2017.
+
+\bibitem{o2017deep}
+T.~J. O'Shea, T.~Erpek, and T.~C. Clancy, ``Deep learning based mimo
+  communications,'' {\em arXiv preprint arXiv:1707.07980}, 2017.
+
+\bibitem{o2018physical}
+T.~J. O'Shea, T.~Roy, N.~West, and B.~C. Hilburn, ``Physical layer
+  communications system design over-the-air using adversarial networks,'' in
+  {\em 2018 26th European Signal Processing Conference (EUSIPCO)},
+  pp.~529--532, IEEE, 2018.
+
+\bibitem{wei2018joint}
+Y.~Wei, Z.~Zhang, F.~R. Yu, and Z.~Han, ``Joint user scheduling and content
+  caching strategy for mobile edge networks using deep reinforcement
+  learning,'' in {\em 2018 IEEE International Conference on Communications
+  Workshops (ICC Workshops)}, pp.~1--6, IEEE, 2018.
+
+\bibitem{huang2019deep}
+L.~Huang, S.~Bi, and Y.~J. Zhang, ``Deep reinforcement learning for online
+  computation offloading in wireless powered mobile-edge computing networks,''
+  {\em IEEE Transactions on Mobile Computing}, 2019.
+
+\end{thebibliography}
