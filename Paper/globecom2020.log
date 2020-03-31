@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2018.6.27)  1 APR 2020 02:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2018.6.27)  1 APR 2020 02:58
 entering extended mode
 **globecom2020.tex
 (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.tex
@@ -225,25 +225,17 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@scount=\count108
 \pfg@temp=\write3
 )
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\enumitem\enumitem.sty"
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip47
-\enit@outerparindent=\dimen137
-\enit@toks=\toks23
-\enit@inbox=\box32
-\enitdp@description=\count109
-)
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip48
-\thm@postskip=\skip49
-\thm@headsep=\skip50
-\dth@everypar=\toks29
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks28
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -252,17 +244,17 @@ nment
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks30
-\c@algorithm=\count110
+\@float@every@algorithm=\toks29
+\c@algorithm=\count109
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count111
-\c@ALC@line=\count112
-\c@ALC@rem=\count113
-\c@ALC@depth=\count114
-\ALC@tlm=\skip51
-\algorithmicindent=\skip52
+\c@ALC@unique=\count110
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
+\ALC@tlm=\skip50
+\algorithmicindent=\skip51
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cjk\CJK.sty"
 Package: CJK 2008/12/29 4.8.2
@@ -274,7 +266,7 @@ Package: MULEenc 2008/12/29 4.8.2
 File: CJK.enc 2008/12/29 4.8.2
 )
 LaTeX Info: Redefining \selectfont on input line 756.
-\CJK@indent=\box33
+\CJK@indent=\box32
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -287,6 +279,34 @@ Package color Info: Driver file: dvips.def on input line 130.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count114
+\Gm@cntv=\count115
+\c@Gm@tempcnt=\count116
+\Gm@bindingoffset=\dimen137
+\Gm@wd@mp=\dimen138
+\Gm@odd@mp=\dimen139
+\Gm@even@mp=\dimen140
+\Gm@layoutwidth=\dimen141
+\Gm@layoutheight=\dimen142
+\Gm@layouthoffset=\dimen143
+\Gm@layoutvoffset=\dimen144
+\Gm@dimlist=\toks30
+
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg"))
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
@@ -296,6 +316,10 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
+\c@mypro=\count117
+
+** ATTENTION: Overriding command lockouts (line 14).
+LaTeX Info: Redefining \IEEEauthorrefmark on input line 19.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -321,17 +345,17 @@ Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen138
-\extrarowheight=\dimen139
+\col@sep=\dimen145
+\extrarowheight=\dimen146
 \NC@list=\toks31
-\extratabsurround=\skip53
-\backup@length=\skip54
+\extratabsurround=\skip52
+\backup@length=\skip53
 )
 \everycr=\toks32
-\minrowclearance=\skip55
+\minrowclearance=\skip54
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count115
+\rownum=\count118
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
@@ -341,161 +365,214 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 60.
 
--- Lines per column: 58 (exact).
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Warning: Unused global option(s):
+    [compsocconf].
+
+(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+
+-- Lines per column: 57 (approximate, difference = 10.51474pt).
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.63902pt, 529.01695pt, 42.63902pt)
+* v-part:(T,H,B)=(50.58878pt, 694.51474pt, 49.86647pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=529.01695pt
+* \textheight=694.51474pt
+* \oddsidemargin=-29.63097pt
+* \evensidemargin=-29.63097pt
+* \topmargin=-52.24883pt
+* \headheight=12.0pt
+* \headsep=18.56761pt
+* \topskip=12.0pt
+* \footskip=40.5821pt
+* \marginparwidth=20.0pt
+* \marginparsep=10.0pt
+* \columnsep=18.06749pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+)
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [1
 
 
 ]
 File: Figs/system.eps Graphic file (type eps)
 
 <Figs/system.eps> [2]
-LaTeX Font Info:    Try loading font information for U+euf on input line 129.
+LaTeX Font Info:    Try loading font information for U+euf on input line 101.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
 )
 
-LaTeX Warning: Reference `A1' on page 3 undefined on input line 138.
+LaTeX Warning: Reference `A1' on page 3 undefined on input line 110.
 
-[3] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.bbl) [4]
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
+[3] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[4] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5075 strings out of 495355
- 67728 string characters out of 3182762
- 136407 words of memory out of 3000000
- 8156 multiletter control sequences out of 15000+200000
- 106200 words of font info for 133 fonts, out of 3000000 for 9000
+ 5367 strings out of 495355
+ 71515 string characters out of 3182762
+ 145632 words of memory out of 3000000
+ 8428 multiletter control sequences out of 15000+200000
+ 115711 words of font info for 159 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,8n,35p,1869b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,35p,1869b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on globecom2020.dvi (4 pages, 35652 bytes).
+Output written on globecom2020.dvi (4 pages, 36096 bytes).

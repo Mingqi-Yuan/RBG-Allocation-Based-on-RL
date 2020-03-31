@@ -1,69 +1,41 @@
-
-%% bare_jrnl.tex
-%% V1.4b
-%% 2015/08/26
-%% by Michael Shell
-%% see http://www.michaelshell.org/
-%% for current contact information.
-%%
-%% This is a skeleton file demonstrating the use of IEEEtran.cls
-%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
-%% journal paper.
-%%
-%% Support sites:
-%% http://www.michaelshell.org/tex/ieeetran/
-%% http://www.ctan.org/pkg/ieeetran
-%% and
-%% http://www.ieee.org/
-
-%%*************************************************************************
-%% Legal Notice:
-%% This code is offered as-is without any warranty either expressed or
-%% implied; without even the implied warranty of MERCHANTABILITY or
-%% FITNESS FOR A PARTICULAR PURPOSE! 
-%% User assumes all risk.
-%% In no event shall the IEEE or any contributor to this code be liable for
-%% any damages or losses, including, but not limited to, incidental,
-%% consequential, or any other damages, resulting from the use or misuse
-%% of any information contained here.
-%%
-%% All comments are the opinions of their respective authors and are not
-%% necessarily endorsed by the IEEE.
-%%
-%% This work is distributed under the LaTeX Project Public License (LPPL)
-%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
-%% distributed and modified. A copy of the LPPL, version 1.3, is included
-%% in the base LaTeX documentation of all distributions of LaTeX released
-%% 2003/12/01 or later.
-%% Retain all contribution notices and credits.
-%% ** Modified files should be clearly indicated as such, including  **
-%% ** renaming them and changing author support contact information. **
-%%*************************************************************************
-
-
-% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
-% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
-% *** with production work. The IEEE's font choices and paper sizes can   ***
-% *** trigger bugs that do not appear when using other class files.       ***                          ***
-% The testflow support page is at:
-% http://www.michaelshell.org/tex/testflow/
-
-
-
-\documentclass[journal]{IEEEtran}
-\usepackage{amsmath,amssymb,amsfonts,float,graphicx,bm,psfrag,amsmath,enumitem,amsthm}
-\usepackage{algorithm, algorithmic,CJK,color,color,url}
+\documentclass[conference,compsocconf]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts,float,graphicx,bm,psfrag,amsmath,amsthm}
+\usepackage{algorithm, algorithmic,CJK,color,color,geometry,url}
 \usepackage{graphicx,cite,bm,psfrag,amsmath}
+\def\mmax{\mathop{\mbox{\scriptsize max}}}
+\def\argmin{\mathop{\mbox{arg\,min}}}
+\def\argmax{\mathop{\mbox{arg\,max}}}
+\newcommand{\defequal}{\stackrel{\mathrm{def}}{=}}
+\renewcommand{\vec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+\newcommand{\popt}{\ensuremath{P^{(K)}_{opt}}}
+\renewcommand{\algorithmicrequire}{ \text{Input:}} %Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{ \text{Procedures:}} %UseOutput in the format of Algorithm
+\newtheorem{mypro}{Proposition}
+\IEEEoverridecommandlockouts
+\pagestyle{plain}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}} %Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{ \textbf{Procedures:}} %UseOutput in the format of Algorithm
+\geometry{left=0.59in, right=0.59in, top=0.7in, bottom=0.69in}
+\DeclareRobustCommand*{\IEEEauthorrefmark}[1]{%
+	\raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize\ensuremath{#1}}}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\usepackage[colorlinks]{hyperref}
+%\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan}
+\urlstyle{same}
+
+%\usepackage{booktabs}
 \usepackage[T1]{fontenc}
 \usepackage[table]{ xcolor}
-\renewcommand\arraystretch{1.2}
+\setlength{\columnsep}{0.25in}
 \begin{document}
 	\title{Achieving the Highest Average User Data Rate in Wireless Network using Reinforcement Learning}
-	\author{
-	\thanks{Authors are with the Chinese University of Hong Kong, Shenzhen	Guangdong, China, 518172. This work was supported, in part, by the Shenzhen Science and Technology Innovation Committee under Grant No. ZDSYS20170725140921348 and the National Natural Science Foundation of China under Grant No. 61731018.
-		
-	Corresponding author, email: SimonPun@cuhk.edu.cn.}}
-	\maketitle
+	\author{Qi Cao\IEEEauthorrefmark{1}, Mingqi Yuan\IEEEauthorrefmark{2}, Siliang Zeng\IEEEauthorrefmark{1}, Man-On Pun\IEEEauthorrefmark{1}\IEEEauthorrefmark{\dagger} and Yi Chen\IEEEauthorrefmark{1}\\
+	\IEEEauthorrefmark{1}The Chinese University of Hong Kong, Shenzhen\\
+	Guangdong, China, 518172\\
+	\IEEEauthorrefmark{2}Mingqi's affilation
+	\thanks{\IEEEauthorrefmark{\dagger}Corresponding author, email: SimonPun@cuhk.edu.cn. This work was supported, in part, by the Shenzhen Science and Technology Innovation Committee under Grant No. ZDSYS20170725140921348, ZDSYS201707251409055, the National Natural Science Foundation of China under Grant No. 61731018, 61701425 and Grant 2017ZT07X152.}}
+\maketitle
 	
 	\begin{abstract}
 		How to predict the wireless network-level performance such as the network capacity, the average user data rate, and the $5\%$-tile user data rate is a million-dollar question. In the literature, some pioneering works have been proposed by exploiting either the information theoretic techniques on the physical-layer (PHY) information or the Markov chain techniques on the multiple access control (MAC) layer information. However, since these mathematical model-driven approaches usually focus on a small part of the network structure, they cannot characterize the whole network performance. In this paper, we propose to utilize a data-driven machine learning approach to tackle this problem. More specifically, both PHY and MAC information is fed into a deep neural network (DNN) specifically designed for network-level performance prediction. Simulation results show that the network-level performance can be accurately predicted at the cost of higher computational complexity.
