@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2018.6.27)  1 APR 2020 02:58
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2018.6.27)  20 APR 2020 11:03
 entering extended mode
 **globecom2020.tex
 (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.tex
@@ -11,72 +11,153 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
 \@IEEEtrantmpdimenC=\dimen104
-\@IEEEtrantmpcountA=\count79
-\@IEEEtrantmpcountB=\count80
-\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+Requested font "ptmr7t" at 10.0pt
+ -> ptmr7t
+
 -- Using 8.5in x 11in (letter) paper.
 -- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
+Requested font "ptmr7t" at 9.0pt
+ -> ptmr7t
 \CLASSINFOnormalsizebaselineskip=\dimen106
 \CLASSINFOnormalsizeunitybaselineskip=\dimen107
 \IEEEnormaljot=\dimen108
+Requested font "ptmr7t" at 5.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 5.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 5.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 5.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 7.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 7.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 7.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 7.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 8.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 8.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 8.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 8.0pt
+ -> ptmbi7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 9.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 9.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 9.0pt
+ -> ptmbi7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 10.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 10.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 10.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 11.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 11.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 11.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 11.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 12.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 12.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 12.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 12.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 17.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 17.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 17.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 17.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 20.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 20.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 20.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 20.0pt
+ -> ptmbi7t
+Requested font "ptmr7t" at 24.0pt
+ -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+Requested font "ptmb7t" at 24.0pt
+ -> ptmb7t
+Requested font "ptmri7t" at 24.0pt
+ -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+Requested font "ptmbi7t" at 24.0pt
+ -> ptmbi7t
 \IEEEquantizedlength=\dimen109
 \IEEEquantizedlengthdiff=\dimen110
 \IEEEquantizedtextheightdiff=\dimen111
@@ -89,27 +170,27 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen118
 \IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@IEEEsubequation=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@IEEEsubequation=\count87
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count87
-\c@table=\count88
-\@IEEEeqnnumcols=\count89
-\@IEEEeqncolcnt=\count90
-\@IEEEsubeqnnumrollback=\count91
+\c@figure=\count88
+\c@table=\count89
+\@IEEEeqnnumcols=\count90
+\@IEEEeqncolcnt=\count91
+\@IEEEsubeqnnumrollback=\count92
 \@IEEEquantizeheightA=\dimen120
 \@IEEEquantizeheightB=\dimen121
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
-\@IEEEquantizemultiple=\count92
+\@IEEEquantizemultiple=\count93
 \@IEEEquantizeboxA=\box26
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
-\c@IEEEbiography=\count93
+\c@IEEEbiography=\count94
 \@IEEEtranrubishbin=\box27
 ) ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
@@ -131,13 +212,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -146,15 +227,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen128
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks16
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks17
 \eqnshift@=\dimen129
 \alignsep@=\dimen130
@@ -181,7 +262,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count106
+\c@float@type=\count107
 \float@exts=\toks20
 \float@box=\box30
 \@float@everytoks=\toks21
@@ -203,10 +284,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: xetex.def on input line 91.
 
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\dvips.def"
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
@@ -221,8 +303,8 @@ LaTeX Info: Redefining \bm on input line 204.
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psfrag\psfrag.sty"
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
-\pfg@pcount=\count107
-\pfg@scount=\count108
+\pfg@pcount=\count108
+\pfg@scount=\count109
 \pfg@temp=\write3
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
@@ -238,6 +320,7 @@ Package: amsthm 2004/08/06 v2.20
 \dth@everypar=\toks28
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty"
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
@@ -245,14 +328,15 @@ nment
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks29
-\c@algorithm=\count109
+\c@algorithm=\count110
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty"
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count110
-\c@ALC@line=\count111
-\c@ALC@rem=\count112
-\c@ALC@depth=\count113
+\c@ALC@unique=\count111
+\c@ALC@line=\count112
+\c@ALC@rem=\count113
+\c@ALC@depth=\count114
 \ALC@tlm=\skip50
 \algorithmicindent=\skip51
 )
@@ -274,11 +358,8 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: dvips.def on input line 130.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def"
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-))
+Package color Info: Driver file: xetex.def on input line 130.
+)
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -293,9 +374,9 @@ Package ifvtex Info: VTeX not detected.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count114
-\Gm@cntv=\count115
-\c@Gm@tempcnt=\count116
+\Gm@cnth=\count115
+\Gm@cntv=\count116
+\c@Gm@tempcnt=\count117
 \Gm@bindingoffset=\dimen137
 \Gm@wd@mp=\dimen138
 \Gm@odd@mp=\dimen139
@@ -306,17 +387,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen144
 \Gm@dimlist=\toks30
 
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg"))
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty"
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg"))
+("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty"
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
 )
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-\c@mypro=\count117
+\c@mypro=\count118
 
 ** ATTENTION: Overriding command lockouts (line 14).
 LaTeX Info: Redefining \IEEEauthorrefmark on input line 19.
@@ -331,14 +412,17 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 100.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
+)
+Requested font "ptmr8t" at 10.0pt
+ -> ptmr8t
+)
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
@@ -355,7 +439,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \minrowclearance=\skip54
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count118
+\rownum=\count119
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
@@ -446,52 +530,129 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
+Requested font "ptmr8t" at 5.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 5.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 5.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 5.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 7.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 7.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 7.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 7.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 8.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 8.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 8.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 8.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 9.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 9.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 9.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 9.0pt
+ -> ptmbi8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 10.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 10.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 10.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 11.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 11.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 11.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 11.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 12.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 12.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 12.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 12.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 17.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 17.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 17.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 17.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 20.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 20.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 20.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 20.0pt
+ -> ptmbi8t
+Requested font "ptmr8t" at 24.0pt
+ -> ptmr8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+Requested font "ptmb8t" at 24.0pt
+ -> ptmb8t
+Requested font "ptmri8t" at 24.0pt
+ -> ptmri8t
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
+Requested font "ptmbi8t" at 24.0pt
+ -> ptmbi8t
 
 -- Lines per column: 57 (approximate, difference = 10.51474pt).
-*geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -523,33 +684,218 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
+Requested font "cmr10" at 10.95pt
+ -> cmr10
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmmi10" at 10.95pt
+ -> cmmi10
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmsy10" at 10.95pt
+ -> cmsy10
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+Requested font "cmex10" at 11.0pt
+ -> cmex10
+Requested font "cmex8" at 7.69997pt
+ -> cmex8
+Requested font "cmex7" at 5.5pt
+ -> cmex7
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
+Requested font "msam10" at 11.0pt
+ -> msam10
+Requested font "msam7" at 7.69997pt
+ -> msam7
+Requested font "msam5" at 5.5pt
+ -> msam5
 LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \vbox (badness 1215) has occurred while \output is active []
+Requested font "msbm10" at 11.0pt
+ -> msbm10
+Requested font "msbm7" at 7.69997pt
+ -> msbm7
+Requested font "msbm5" at 5.5pt
+ -> msbm5
+Requested font "cmbx10" at 10.95pt
+ -> cmbx10
+Requested font "cmbx8" at 8.0pt
+ -> cmbx8
+Requested font "cmbx5" at 5.0pt
+ -> cmbx5
+Requested font "cmmib10" at 10.95pt
+ -> cmmib10
+Requested font "cmmib8" at 8.0pt
+ -> cmmib8
+Requested font "cmmib5" at 5.0pt
+ -> cmmib5
+Requested font "cmbsy10" at 10.95pt
+ -> cmbsy10
+Requested font "cmbsy8" at 8.0pt
+ -> cmbsy8
+Requested font "cmbsy5" at 5.0pt
+ -> cmbsy5
+Requested font "ptmr8t" at 7.69997pt
+ -> ptmr8t
+Requested font "cmr6" at 6.0pt
+ -> cmr6
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+Requested font "cmex8" at 8.0pt
+ -> cmex8
+Requested font "cmex7" at 6.0pt
+ -> cmex7
+Requested font "cmex7" at 5.0pt
+ -> cmex7
+Requested font "msam10" at 8.0pt
+ -> msam10
+Requested font "msam7" at 6.0pt
+ -> msam7
+Requested font "msam5" at 5.0pt
+ -> msam5
+Requested font "msbm10" at 8.0pt
+ -> msbm10
+Requested font "msbm7" at 6.0pt
+ -> msbm7
+Requested font "msbm5" at 5.0pt
+ -> msbm5
+Requested font "cmbx6" at 6.0pt
+ -> cmbx6
+Requested font "cmmib6" at 6.0pt
+ -> cmmib6
+Requested font "cmbsy6" at 6.0pt
+ -> cmbsy6
+Requested font "ptmr8t" at 6.0pt
+ -> ptmr8t
 
- [1
+Underfull \hbox (badness 4726) in paragraph at lines 38--38
+[][][]\T1/ptm/m/n/8 *Authors con-tribute e-qual-ly. []Corresponding au-thor, e-
+mail: Si-mon-
+ []
+
+Requested font "cmr9" at 9.0pt
+ -> cmr9
+Requested font "cmmi9" at 9.0pt
+ -> cmmi9
+Requested font "cmsy9" at 9.0pt
+ -> cmsy9
+Requested font "cmex9" at 9.0pt
+ -> cmex9
+Requested font "msam10" at 9.0pt
+ -> msam10
+Requested font "msbm10" at 9.0pt
+ -> msbm10
+Requested font "cmbx9" at 9.0pt
+ -> cmbx9
+Requested font "cmmib9" at 9.0pt
+ -> cmmib9
+Requested font "cmbsy9" at 9.0pt
+ -> cmbsy9
+Requested font "ptmrc8t" at 10.0pt
+ -> ptmrc8t
+Requested font "cmex7" at 7.0pt
+ -> cmex7
+Requested font "msam10" at 10.0pt
+ -> msam10
+Requested font "msam7" at 7.0pt
+ -> msam7
+Requested font "msbm10" at 10.0pt
+ -> msbm10
+Requested font "msbm7" at 7.0pt
+ -> msbm7
+Requested font "cmbx10" at 10.0pt
+ -> cmbx10
+Requested font "cmbx7" at 7.0pt
+ -> cmbx7
+Requested font "cmmib10" at 10.0pt
+ -> cmmib10
+Requested font "cmmib7" at 7.0pt
+ -> cmmib7
+Requested font "cmbsy10" at 10.0pt
+ -> cmbsy10
+Requested font "cmbsy7" at 7.0pt
+ -> cmbsy7
+[1
 
 
 ]
+LaTeX Font Info:    Try loading font information for U+euf on input line 87.
+ ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\ueuf.fd"
+File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+)
+Requested font "eufm10" at 10.0pt
+ -> eufm10
+Requested font "eufm7" at 7.0pt
+ -> eufm7
+Requested font "eufm5" at 5.0pt
+ -> eufm5
 File: Figs/system.eps Graphic file (type eps)
 
 <Figs/system.eps> [2]
-LaTeX Font Info:    Try loading font information for U+euf on input line 101.
+Requested font "ptmrc8t" at 8.0pt
+ -> ptmrc8t
+Requested font "eufm10" at 8.0pt
+ -> eufm10
+Requested font "eufm7" at 6.0pt
+ -> eufm7
+File: Figs/RBGNet.eps Graphic file (type eps)
+ <Figs/RBGNet.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+[] []\T1/ptm/m/n/10 Receive re-ward $\OML/cmm/m/it/10 r[]$ \T1/ptm/m/n/10 and s
+-tore the tran-si-tion-s
+ []
 
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\ueuf.fd"
-File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+
+Underfull \hbox (badness 5077) in paragraph at lines 213--214
+[] []\T1/ptm/m/n/10 Sample a ran-dom mini-batch of $\OML/cmm/m/it/10 N$ \T1/ptm
+/m/n/10 tran-si-tion-s
+ []
+
+[3]
+Underfull \hbox (badness 1430) in paragraph at lines 243--254
+[]\T1/ptm/b/n/10 Remark: \T1/ptm/m/n/10 For the ac-tor net-work, the in-put's s
+hape is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--298
+[] []\T1/ptm/m/n/10 Update $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ A[]\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 and $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\
+OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 : $\OML/cmm/m/it/10 p\OT1/c
+mr/m/n/10 (\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
+[] []\T1/ptm/m/n/10 Update $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ A[]\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 and $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\
+OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 : $\OML/cmm/m/it/10 p\OT1/c
+mr/m/n/10 (\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
+ []
+
+[4] [5]
+File: Figs/cdf.eps Graphic file (type eps)
+ <Figs/cdf.eps>
+(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.bbl
+Underfull \hbox (badness 1910) in paragraph at lines 37--41
+[]\T1/ptm/m/n/8 P. Ameigeiras, Y. Wang, J. Navarro-Ortiz, P. E. Mo-gensen, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+[]\T1/ptm/m/n/8 3GPP, ``The mo-bile broad-band s-tan-dard.'' $https : / / www .
+ 3gpp . org /
+ []
+
 )
-
-LaTeX Warning: Reference `A1' on page 3 undefined on input line 110.
-
-[3] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -561,18 +907,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[6] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux) ) 
 Here is how much of TeX's memory you used:
- 5367 strings out of 495355
- 71515 string characters out of 3182762
- 145632 words of memory out of 3000000
- 8428 multiletter control sequences out of 15000+200000
- 115711 words of font info for 159 fonts, out of 3000000 for 9000
+ 5288 strings out of 430478
+ 66505 string characters out of 3191002
+ 147911 words of memory out of 3000000
+ 8329 multiletter control sequences out of 15000+200000
+ 120321 words of font info for 162 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,14n,35p,1869b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,35p,1445b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on globecom2020.dvi (4 pages, 36096 bytes).
+Output written on globecom2020.pdf (6 pages).

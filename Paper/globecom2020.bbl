@@ -1,14 +1,43 @@
 \begin{thebibliography}{10}
 
-\bibitem{marsland2014machine}
-S.~Marsland, {\em Machine learning: an algorithmic perspective}.
-\newblock Chapman and Hall/CRC, 2014.
+\bibitem{borst2001dynamic}
+S.~Borst and P.~Whiting, ``Dynamic rate control algorithms for hdr throughput
+  optimization,'' in {\em Proceedings IEEE INFOCOM 2001. Conference on Computer
+  Communications. Twentieth Annual Joint Conference of the IEEE Computer and
+  Communications Society (Cat. No. 01CH37213)}, vol.~2, pp.~976--985, IEEE,
+  2001.
 
-\bibitem{shi2011iteratively}
-Q.~Shi, M.~Razaviyayn, Z.-Q. Luo, and C.~He, ``An iteratively weighted mmse
-  approach to distributed sum-utility maximization for a mimo interfering
-  broadcast channel,'' {\em IEEE Transactions on Signal Processing}, vol.~59,
-  no.~9, pp.~4331--4340, 2011.
+\bibitem{tse2001multiuser}
+D.~Tse, ``Multiuser diversity in wireless networks,'' in {\em Wireless
+  Communications Seminar, Standford University}, 2001.
+
+\bibitem{kelly1998rate}
+F.~P. Kelly, A.~K. Maulloo, and D.~K. Tan, ``Rate control for communication
+  networks: shadow prices, proportional fairness and stability,'' {\em Journal
+  of the Operational Research society}, vol.~49, no.~3, pp.~237--252, 1998.
+
+\bibitem{kim2005proportional}
+H.~Kim and Y.~Han, ``A proportional fair scheduling for multicarrier
+  transmission systems,'' {\em IEEE Communications letters}, vol.~9, no.~3,
+  pp.~210--212, 2005.
+
+\bibitem{gemici2019user}
+{\"O}.~F. Gemici, F.~Kara, {\.I}.~H{\"o}kelek, and H.~A. {\c{C}}{\i}rpan,
+  ``User scheduling and power allocation for nonfull buffer traffic in noma
+  downlink systems,'' {\em International Journal of Communication Systems},
+  vol.~32, no.~1, p.~e3834, 2019.
+
+\bibitem{saito2015system}
+Y.~Saito, A.~Benjebbour, A.~Li, K.~Takeda, Y.~Kishiyama, and T.~Nakamura,
+  ``System-level evaluation of downlink non-orthogonal multiple access (noma)
+  for non-full buffer traffic model,'' in {\em 2015 IEEE Conference on
+  Standards for Communications and Networking (CSCN)}, pp.~94--99, IEEE, 2015.
+
+\bibitem{ameigeiras2012traffic}
+P.~Ameigeiras, Y.~Wang, J.~Navarro-Ortiz, P.~E. Mogensen, and J.~M.
+  Lopez-Soler, ``Traffic models impact on ofdma scheduling design,'' {\em
+  EURASIP Journal on Wireless Communications and Networking}, vol.~2012, no.~1,
+  p.~61, 2012.
 
 \bibitem{sun2018learning}
 H.~Sun, X.~Chen, Q.~Shi, M.~Hong, X.~Fu, and N.~D. Sidiropoulos, ``Learning to
@@ -16,21 +45,10 @@ H.~Sun, X.~Chen, Q.~Shi, M.~Hong, X.~Fu, and N.~D. Sidiropoulos, ``Learning to
   IEEE Transactions on Signal Processing}, vol.~66, no.~20, pp.~5438--5453,
   2018.
 
-\bibitem{liang2018towards}
-F.~Liang, C.~Shen, W.~Yu, and F.~Wu, ``Towards optimal power control via
-  ensembling deep neural networks,'' {\em arXiv preprint arXiv:1807.10025},
-  2018.
-
 \bibitem{sato2019approximation}
 R.~Sato, M.~Yamada, and H.~Kashima, ``Approximation ratios of graph neural
   networks for combinatorial problems,'' in {\em Advances in Neural Information
   Processing Systems}, pp.~4083--4092, 2019.
-
-\bibitem{ghadimi2017reinforcement}
-E.~Ghadimi, F.~D. Calabrese, G.~Peters, and P.~Soldati, ``A reinforcement
-  learning approach to power control and rate adaptation in cellular
-  networks,'' in {\em 2017 IEEE International Conference on Communications
-  (ICC)}, pp.~1--7, IEEE, 2017.
 
 \bibitem{bruno2014robust}
 R.~Bruno, A.~Masaracchia, and A.~Passarella, ``Robust adaptive modulation and
@@ -38,30 +56,31 @@ R.~Bruno, A.~Masaracchia, and A.~Passarella, ``Robust adaptive modulation and
   2014 IEEE 80th Vehicular Technology Conference (VTC2014-Fall)}, pp.~1--6,
   IEEE, 2014.
 
-\bibitem{o2017introduction}
-T.~O¡¯Shea and J.~Hoydis, ``An introduction to deep learning for the physical
-  layer,'' {\em IEEE Transactions on Cognitive Communications and Networking},
-  vol.~3, no.~4, pp.~563--575, 2017.
+\bibitem{protocol2013}
+3GPP, ``The mobile broadband standard.''
+  \url{https://www.3gpp.org/technologies/keywords-acronyms/97-lte-advanced}.
 
-\bibitem{o2017deep}
-T.~J. O'Shea, T.~Erpek, and T.~C. Clancy, ``Deep learning based mimo
-  communications,'' {\em arXiv preprint arXiv:1707.07980}, 2017.
+\bibitem{Lillicrap2015Continuous}
+T.~P. Lillicrap, J.~J. Hunt, A.~Pritzel, N.~Heess, T.~Erez, Y.~Tassa,
+  D.~Silver, and D.~Wierstra, ``Continuous control with deep reinforcement
+  learning,'' {\em Computer Science}, vol.~8, no.~6, p.~A187, 2015.
 
-\bibitem{o2018physical}
-T.~J. O'Shea, T.~Roy, N.~West, and B.~C. Hilburn, ``Physical layer
-  communications system design over-the-air using adversarial networks,'' in
-  {\em 2018 26th European Signal Processing Conference (EUSIPCO)},
-  pp.~529--532, IEEE, 2018.
+\bibitem{long2015fully}
+J.~Long, E.~Shelhamer, and T.~Darrell, ``Fully convolutional networks for
+  semantic segmentation,'' in {\em Proceedings of the IEEE conference on
+  computer vision and pattern recognition}, pp.~3431--3440, 2015.
 
-\bibitem{wei2018joint}
-Y.~Wei, Z.~Zhang, F.~R. Yu, and Z.~Han, ``Joint user scheduling and content
-  caching strategy for mobile edge networks using deep reinforcement
-  learning,'' in {\em 2018 IEEE International Conference on Communications
-  Workshops (ICC Workshops)}, pp.~1--6, IEEE, 2018.
+\bibitem{He2016Deep}
+K.~He, X.~Zhang, S.~Ren, and S.~Jian, ``Deep residual learning for image
+  recognition,'' in {\em IEEE Conference on Computer Vision \& Pattern
+  Recognition}, 2016.
 
-\bibitem{huang2019deep}
-L.~Huang, S.~Bi, and Y.~J. Zhang, ``Deep reinforcement learning for online
-  computation offloading in wireless powered mobile-edge computing networks,''
-  {\em IEEE Transactions on Mobile Computing}, 2019.
+\bibitem{Lin2013Network}
+M.~Lin, Q.~Chen, and S.~Yan, ``Network in network,'' {\em Computer Science},
+  2013.
+
+\bibitem{HowardUniversal}
+J.~Howard and S.~Ruder, ``Universal language model fine-tuning for text
+  classification,''
 
 \end{thebibliography}

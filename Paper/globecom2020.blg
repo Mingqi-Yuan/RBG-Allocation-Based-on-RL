@@ -1,3 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: globecom2020.aux
 The style file: ieeetr.bst
 Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 259 of file reference.bib
+ :  
+ :  year={2013}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in HowardUniversal
+Warning--empty year in HowardUniversal
+(There was 1 error message)
