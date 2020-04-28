@@ -1,10 +1,12 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2018.6.27)  20 APR 2020 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.29)  28 APR 2020 23:12
 entering extended mode
-**globecom2020.tex
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\IEEEtran.cls
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/Friedrich Gauss/Desktop/RBG Allocation Based on RL/Paper/globecom2020"
+(c:/Users/Friedrich Gauss/Desktop/RBG Allocation Based on RL/Paper/globecom2020.tex
+LaTeX2e <2018-12-01>
+(d:/texlive/2019/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -16,148 +18,56 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd"
+(d:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-Requested font "ptmr7t" at 10.0pt
- -> ptmr7t
-
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
+-- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
-Requested font "ptmr7t" at 9.0pt
- -> ptmr7t
 \CLASSINFOnormalsizebaselineskip=\dimen106
 \CLASSINFOnormalsizeunitybaselineskip=\dimen107
 \IEEEnormaljot=\dimen108
-Requested font "ptmr7t" at 5.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 5.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 5.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 5.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 7.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 7.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 7.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 7.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 8.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 8.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 8.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 8.0pt
- -> ptmbi7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 9.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 9.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 9.0pt
- -> ptmbi7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 10.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 10.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 10.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 11.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 11.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 11.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 11.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 12.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 12.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 12.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 12.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 17.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 17.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 17.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 17.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 20.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 20.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 20.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 20.0pt
- -> ptmbi7t
-Requested font "ptmr7t" at 24.0pt
- -> ptmr7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-Requested font "ptmb7t" at 24.0pt
- -> ptmb7t
-Requested font "ptmri7t" at 24.0pt
- -> ptmri7t
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-Requested font "ptmbi7t" at 24.0pt
- -> ptmbi7t
 \IEEEquantizedlength=\dimen109
 \IEEEquantizedlengthdiff=\dimen110
 \IEEEquantizedtextheightdiff=\dimen111
@@ -187,46 +97,43 @@ Requested font "ptmbi7t" at 24.0pt
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
 \@IEEEquantizemultiple=\count93
-\@IEEEquantizeboxA=\box26
+\@IEEEquantizeboxA=\box27
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count94
-\@IEEEtranrubishbin=\box27
-) ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
-Package: amsmath 2000/07/18 v2.13 AMS math features
+\@IEEEtranrubishbin=\box28
+) (d:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty"
-Package: amstext 2000/06/29 v2.01
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
+(d:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (d:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen126
-))
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
+)) (d:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen127
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
+) (d:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 223.
 \uproot@=\count96
 \leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 385.
 \classnum@=\count98
 \DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
 \big@size=\dimen128
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \macc@depth=\count100
 \c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
@@ -247,68 +154,55 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2009/06/22 v3.00
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (d:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (d:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-))
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\float\float.sty"
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (d:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks20
-\float@box=\box30
+\float@box=\box31
 \@float@everytoks=\toks21
-\@floatcapt=\box31
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\@floatcapt=\box32
+) (d:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
+) (d:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (d:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: xetex.def on input line 91.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def"
-File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
-
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (d:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\tools\bm.sty"
-Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+) (d:/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
-LaTeX Info: Redefining \bm on input line 204.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psfrag\psfrag.sty"
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+) (d:/texlive/2019/texmf-dist/tex/latex/psfrag/psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count108
 \pfg@scount=\count109
 \pfg@temp=\write3
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
-Package: amsthm 2004/08/06 v2.20
+) (d:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks23
 \thm@bodyfont=\toks24
 \thm@headfont=\toks25
@@ -318,65 +212,122 @@ Package: amsthm 2004/08/06 v2.20
 \thm@postskip=\skip48
 \thm@headsep=\skip49
 \dth@everypar=\toks28
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty"
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
+) (d:/texlive/2019/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (d:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (d:/texlive/2019/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\base\ifthen.sty"
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count110
+\c@ALG@rem=\count111
+\c@ALG@nested=\count112
+\ALG@tlm=\skip50
+\ALG@thistlm=\skip51
+\c@ALG@Lnr=\count113
+\c@ALG@blocknr=\count114
+\c@ALG@storecount=\count115
+\c@ALG@tmpcounter=\count116
+\ALG@tmplength=\skip52
 )
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (d:/texlive/2019/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
 \@float@every@algorithm=\toks29
-\c@algorithm=\count110
+\c@algorithm=\count117
+) (d:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+ (d:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+) (d:/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
 )
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty"
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count111
-\c@ALC@line=\count112
-\c@ALC@rem=\count113
-\c@ALC@depth=\count114
-\ALC@tlm=\skip50
-\algorithmicindent=\skip51
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box33
+) (d:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (d:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cjk\CJK.sty"
-Package: CJK 2008/12/29 4.8.2
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty"
-Package: MULEenc 2008/12/29 4.8.2
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cjk\CJK.enc"
-File: CJK.enc 2008/12/29 4.8.2
-)
-LaTeX Info: Redefining \selectfont on input line 756.
-\CJK@indent=\box32
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\graphics\color.sty"
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: xetex.def on input line 130.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (d:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+) (d:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count115
-\Gm@cntv=\count116
-\c@Gm@tempcnt=\count117
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
 \Gm@bindingoffset=\dimen137
 \Gm@wd@mp=\dimen138
 \Gm@odd@mp=\dimen139
@@ -386,270 +337,232 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen143
 \Gm@layoutvoffset=\dimen144
 \Gm@dimlist=\toks30
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg"))
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty"
+) (d:/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\cite\cite.sty"
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (d:/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
-\c@mypro=\count118
+\c@mypro=\count121
 
-** ATTENTION: Overriding command lockouts (line 14).
-LaTeX Info: Redefining \IEEEauthorrefmark on input line 19.
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\base\t1enc.def"
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+** ATTENTION: Overriding command lockouts (line 15).
+LaTeX Info: Redefining \IEEEauthorrefmark on input line 20.
+(d:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (d:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 100.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\psnfss\t1ptm.fd"
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+ (d:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)) (d:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (d:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Requested font "ptmr8t" at 10.0pt
- -> ptmr8t
-)
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Driver file: xetex.def on input line 225.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\colortbl\colortbl.sty"
-Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\tools\array.sty"
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (d:/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
+ (d:/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen145
+\ar@mcellbox=\box34
 \extrarowheight=\dimen146
 \NC@list=\toks31
-\extratabsurround=\skip52
-\backup@length=\skip53
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box35
 )
 \everycr=\toks32
-\minrowclearance=\skip54
+\minrowclearance=\skip55
 )
-LaTeX Info: Redefining \color on input line 702.
-\rownum=\count119
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count122
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 
 LaTeX Warning: Unused global option(s):
     [compsocconf].
 
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-Requested font "ptmr8t" at 5.0pt
- -> ptmr8t
+(./globecom2020.aux)
+\openout1 = `globecom2020.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 5.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 5.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 5.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 7.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 7.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 7.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 7.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 8.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 8.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 8.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 8.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 9.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 9.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 9.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 9.0pt
- -> ptmbi8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 10.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 10.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 10.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 11.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 11.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 11.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 11.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 12.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 12.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 12.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 12.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 17.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 17.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 17.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 17.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 20.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 20.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 20.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 20.0pt
- -> ptmbi8t
-Requested font "ptmr8t" at 24.0pt
- -> ptmr8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-Requested font "ptmb8t" at 24.0pt
- -> ptmb8t
-Requested font "ptmri8t" at 24.0pt
- -> ptmri8t
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
-Requested font "ptmbi8t" at 24.0pt
- -> ptmbi8t
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
 
 -- Lines per column: 57 (approximate, difference = 10.51474pt).
+(d:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count123
+\scratchdimen=\dimen147
+\scratchbox=\box36
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen148
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks34
+) (d:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (d:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (d:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) (d:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (d:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -683,216 +596,98 @@ Requested font "ptmbi8t" at 24.0pt
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
-Requested font "cmr10" at 10.95pt
- -> cmr10
-Requested font "cmr8" at 8.0pt
- -> cmr8
-Requested font "cmmi10" at 10.95pt
- -> cmmi10
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmsy10" at 10.95pt
- -> cmsy10
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-Requested font "cmex10" at 11.0pt
- -> cmex10
-Requested font "cmex8" at 7.69997pt
- -> cmex8
-Requested font "cmex7" at 5.5pt
- -> cmex7
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+(d:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-Requested font "msam10" at 11.0pt
- -> msam10
-Requested font "msam7" at 7.69997pt
- -> msam7
-Requested font "msam5" at 5.5pt
- -> msam5
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
-
-("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+ (d:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Requested font "msbm10" at 11.0pt
- -> msbm10
-Requested font "msbm7" at 7.69997pt
- -> msbm7
-Requested font "msbm5" at 5.5pt
- -> msbm5
-Requested font "cmbx10" at 10.95pt
- -> cmbx10
-Requested font "cmbx8" at 8.0pt
- -> cmbx8
-Requested font "cmbx5" at 5.0pt
- -> cmbx5
-Requested font "cmmib10" at 10.95pt
- -> cmmib10
-Requested font "cmmib8" at 8.0pt
- -> cmmib8
-Requested font "cmmib5" at 5.0pt
- -> cmmib5
-Requested font "cmbsy10" at 10.95pt
- -> cmbsy10
-Requested font "cmbsy8" at 8.0pt
- -> cmbsy8
-Requested font "cmbsy5" at 5.0pt
- -> cmbsy5
-Requested font "ptmr8t" at 7.69997pt
- -> ptmr8t
-Requested font "cmr6" at 6.0pt
- -> cmr6
-Requested font "cmmi6" at 6.0pt
- -> cmmi6
-Requested font "cmsy6" at 6.0pt
- -> cmsy6
-Requested font "cmex8" at 8.0pt
- -> cmex8
-Requested font "cmex7" at 6.0pt
- -> cmex7
-Requested font "cmex7" at 5.0pt
- -> cmex7
-Requested font "msam10" at 8.0pt
- -> msam10
-Requested font "msam7" at 6.0pt
- -> msam7
-Requested font "msam5" at 5.0pt
- -> msam5
-Requested font "msbm10" at 8.0pt
- -> msbm10
-Requested font "msbm7" at 6.0pt
- -> msbm7
-Requested font "msbm5" at 5.0pt
- -> msbm5
-Requested font "cmbx6" at 6.0pt
- -> cmbx6
-Requested font "cmmib6" at 6.0pt
- -> cmmib6
-Requested font "cmbsy6" at 6.0pt
- -> cmbsy6
-Requested font "ptmr8t" at 6.0pt
- -> ptmr8t
-
-Underfull \hbox (badness 4726) in paragraph at lines 38--38
-[][][]\T1/ptm/m/n/8 *Authors con-tribute e-qual-ly. []Corresponding au-thor, e-
-mail: Si-mon-
+Underfull \hbox (badness 4739) in paragraph at lines 39--39
+[][][]\T1/ptm/m/n/8 *Authors con-tribute equally. []Corresponding au-thor, email: Si-mon-
  []
 
-Requested font "cmr9" at 9.0pt
- -> cmr9
-Requested font "cmmi9" at 9.0pt
- -> cmmi9
-Requested font "cmsy9" at 9.0pt
- -> cmsy9
-Requested font "cmex9" at 9.0pt
- -> cmex9
-Requested font "msam10" at 9.0pt
- -> msam10
-Requested font "msbm10" at 9.0pt
- -> msbm10
-Requested font "cmbx9" at 9.0pt
- -> cmbx9
-Requested font "cmmib9" at 9.0pt
- -> cmmib9
-Requested font "cmbsy9" at 9.0pt
- -> cmbsy9
-Requested font "ptmrc8t" at 10.0pt
- -> ptmrc8t
-Requested font "cmex7" at 7.0pt
- -> cmex7
-Requested font "msam10" at 10.0pt
- -> msam10
-Requested font "msam7" at 7.0pt
- -> msam7
-Requested font "msbm10" at 10.0pt
- -> msbm10
-Requested font "msbm7" at 7.0pt
- -> msbm7
-Requested font "cmbx10" at 10.0pt
- -> cmbx10
-Requested font "cmbx7" at 7.0pt
- -> cmbx7
-Requested font "cmmib10" at 10.0pt
- -> cmmib10
-Requested font "cmmib7" at 7.0pt
- -> cmmib7
-Requested font "cmbsy10" at 10.0pt
- -> cmbsy10
-Requested font "cmbsy7" at 7.0pt
- -> cmbsy7
 [1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+{d:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Try loading font information for U+euf on input line 87.
- ("D:\Program Files (x86)\CTEX\MiKTeX\tex\latex\amsfonts\ueuf.fd"
-File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+LaTeX Font Info:    Try loading font information for U+euf on input line 88.
+ (d:/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Requested font "eufm10" at 10.0pt
- -> eufm10
-Requested font "eufm7" at 7.0pt
- -> eufm7
-Requested font "eufm5" at 5.0pt
- -> eufm5
-File: Figs/system.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <Figs/system.eps>
+(epstopdf)                    date: 2020-04-01 15:07:40
+(epstopdf)                    size: 159898 bytes
+(epstopdf)             Output file: <Figs/system-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-04-23 12:55:52
+(epstopdf)                    size: 49273 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figs/system-eps-converted-to.pdf Figs/system.eps>
+(epstopdf)             \includegraphics on input line 113.
+Package epstopdf Info: Output file is already uptodate.
+<Figs/system-eps-converted-to.pdf, id=17, 734.745pt x 356.33125pt>
+File: Figs/system-eps-converted-to.pdf Graphic file (type pdf)
+<use Figs/system-eps-converted-to.pdf>
+Package pdftex.def Info: Figs/system-eps-converted-to.pdf  used on input line 113.
+(pdftex.def)             Requested size: 255.47473pt x 123.89679pt.
+ [2 <./Figs/system-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figs/RBGNet.eps>
+(epstopdf)                    date: 2020-04-22 18:08:56
+(epstopdf)                    size: 9868781 bytes
+(epstopdf)             Output file: <Figs/RBGNet-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-04-23 12:55:55
+(epstopdf)                    size: 306920 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figs/RBGNet-eps-converted-to.pdf Figs/RBGNet.eps>
+(epstopdf)             \includegraphics on input line 186.
+Package epstopdf Info: Output file is already uptodate.
+<Figs/RBGNet-eps-converted-to.pdf, id=43, 963.6pt x 391.4625pt>
+File: Figs/RBGNet-eps-converted-to.pdf Graphic file (type pdf)
+<use Figs/RBGNet-eps-converted-to.pdf>
+Package pdftex.def Info: Figs/RBGNet-eps-converted-to.pdf  used on input line 186.
+(pdftex.def)             Requested size: 385.43317pt x 156.58221pt.
 
-<Figs/system.eps> [2]
-Requested font "ptmrc8t" at 8.0pt
- -> ptmrc8t
-Requested font "eufm10" at 8.0pt
- -> eufm10
-Requested font "eufm7" at 6.0pt
- -> eufm7
-File: Figs/RBGNet.eps Graphic file (type eps)
- <Figs/RBGNet.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-[] []\T1/ptm/m/n/10 Receive re-ward $\OML/cmm/m/it/10 r[]$ \T1/ptm/m/n/10 and s
--tore the tran-si-tion-s
+Underfull \hbox (badness 4686) in paragraph at lines 222--223
+[] \T1/ptm/m/n/10 Re-ceive re-ward $\OML/cmm/m/it/10 r[]$ \T1/ptm/m/n/10 and store the tran-si-tions
  []
 
 
-Underfull \hbox (badness 5077) in paragraph at lines 213--214
-[] []\T1/ptm/m/n/10 Sample a ran-dom mini-batch of $\OML/cmm/m/it/10 N$ \T1/ptm
-/m/n/10 tran-si-tion-s
+Underfull \hbox (badness 1742) in paragraph at lines 223--224
+[] \T1/ptm/m/n/10 Sam-ple a ran-dom mini-batch of $\OML/cmm/m/it/10 N$ \T1/ptm/m/n/10 tran-si-tions
  []
 
 [3]
-Underfull \hbox (badness 1430) in paragraph at lines 243--254
-[]\T1/ptm/b/n/10 Remark: \T1/ptm/m/n/10 For the ac-tor net-work, the in-put's s
-hape is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
-[] []\T1/ptm/m/n/10 Update $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
- A[]\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 and $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\
-OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 : $\OML/cmm/m/it/10 p\OT1/c
-mr/m/n/10 (\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--318
-[] []\T1/ptm/m/n/10 Update $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
- A[]\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 and $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\
-OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 : $\OML/cmm/m/it/10 p\OT1/c
-mr/m/n/10 (\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
- []
-
-[4] [5]
-File: Figs/cdf.eps Graphic file (type eps)
- <Figs/cdf.eps>
-(C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.bbl
+<Figs/gp.png, id=50, 698.61pt x 405.515pt>
+File: Figs/gp.png Graphic file (type png)
+<use Figs/gp.png>
+Package pdftex.def Info: Figs/gp.png  used on input line 271.
+(pdftex.def)             Requested size: 209.58461pt x 121.65543pt.
+ [4 <./Figs/RBGNet-eps-converted-to.pdf>] [5 <./Figs/gp.png>]
+Package epstopdf Info: Source file: <Figs/cdf.eps>
+(epstopdf)                    date: 2020-04-22 18:08:56
+(epstopdf)                    size: 38369 bytes
+(epstopdf)             Output file: <Figs/cdf-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-04-23 12:55:58
+(epstopdf)                    size: 12738 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figs/cdf-eps-converted-to.pdf Figs/cdf.eps>
+(epstopdf)             \includegraphics on input line 389.
+Package epstopdf Info: Output file is already uptodate.
+<Figs/cdf-eps-converted-to.pdf, id=66, 421.575pt x 449.68pt>
+File: Figs/cdf-eps-converted-to.pdf Graphic file (type pdf)
+<use Figs/cdf-eps-converted-to.pdf>
+Package pdftex.def Info: Figs/cdf-eps-converted-to.pdf  used on input line 389.
+(pdftex.def)             Requested size: 255.47473pt x 272.51352pt.
+ (./globecom2020.bbl
 Underfull \hbox (badness 1910) in paragraph at lines 37--41
 []\T1/ptm/m/n/8 P. Ameigeiras, Y. Wang, J. Navarro-Ortiz, P. E. Mo-gensen, and
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-[]\T1/ptm/m/n/8 3GPP, ``The mo-bile broad-band s-tan-dard.'' $https : / / www .
- 3gpp . org /
+[6 <./Figs/cdf-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+[]\T1/ptm/m/n/8 3GPP, ``The mo-bile broad-band stan-dard.'' $https : / / www . 3gpp . org /
  []
 
 )
@@ -907,14 +702,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (C:\Users\Tommy\OneDrive\Mylatex\globecom2020\globecom2020.aux) ) 
-Here is how much of TeX's memory you used:
- 5288 strings out of 430478
- 66505 string characters out of 3191002
- 147911 words of memory out of 3000000
- 8329 multiletter control sequences out of 15000+200000
- 120321 words of font info for 162 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 41i,14n,35p,1445b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+[7
 
-Output written on globecom2020.pdf (6 pages).
+] (./globecom2020.aux) ) 
+Here is how much of TeX's memory you used:
+ 6603 strings out of 492623
+ 89326 string characters out of 6133290
+ 187253 words of memory out of 5000000
+ 10317 multiletter control sequences out of 15000+600000
+ 132400 words of font info for 173 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,14n,35p,1509b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on globecom2020.pdf (7 pages, 759122 bytes).
+PDF statistics:
+ 153 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,11 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: globecom2020.aux
+This is BibTeX, Version 0.99d (TeX Live 2019/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: globecom2020.aux
 The style file: ieeetr.bst
 Database file #1: reference.bib
-I was expecting a `,' or a `}'---line 259 of file reference.bib
- :  
- :  year={2013}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--empty journal in HowardUniversal
 Warning--empty year in HowardUniversal
-(There was 1 error message)
+You've used 16 entries,
+            1876 wiz_defined-function locations,
+            575 strings with 6826 characters,
+and the built_in function-call counts, 4592 in all, are:
+= -- 431
+> -- 198
+< -- 0
++ -- 72
+- -- 56
+* -- 327
+:= -- 642
+add.period$ -- 15
+call.type$ -- 16
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 252
+empty$ -- 441
+format.name$ -- 56
+if$ -- 1117
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 51
+num.names$ -- 16
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 167
+stack$ -- 0
+substring$ -- 278
+swap$ -- 100
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 43
+width$ -- 18
+write$ -- 155
+(There were 2 warnings)
